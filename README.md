@@ -68,14 +68,14 @@
 
 <div align="center">
   <!-- Row 1: Primary Flagship Systems -->
-  <p align="center">
-    <a href="https://github.com/divyviradiya2/ethertransfer" target="_blank"><img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=ethertransfer&bg_color=0d1117&title_color=34d399&text_color=e6edf3&icon_color=10b981&border_color=10b981&show_owner=false&cache_seconds=1800" width="48%" alt="EtherTransfer" /></a>
-    <a href="https://github.com/PocketMC/pocket-mc-windows" target="_blank"><img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=PocketMC&repo=pocket-mc-windows&bg_color=0d1117&title_color=34d399&text_color=e6edf3&icon_color=10b981&border_color=10b981&show_owner=false&cache_seconds=1800" width="48%" alt="PocketMC Windows" /></a>
-  </p>
+  <a href="https://github.com/divyviradiya2/ethertransfer" target="_blank"><img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=ethertransfer&bg_color=0d1117&title_color=34d399&text_color=e6edf3&icon_color=10b981&border_color=10b981&show_owner=false&cache_seconds=1800" width="47%" alt="EtherTransfer" /></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/PocketMC/pocket-mc-windows" target="_blank"><img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=PocketMC&repo=pocket-mc-windows&bg_color=0d1117&title_color=34d399&text_color=e6edf3&icon_color=10b981&border_color=10b981&show_owner=false&cache_seconds=1800" width="47%" alt="PocketMC Windows" /></a>
+  
+  <br /><br />
+  
   <!-- Row 2: Rust Engine -->
-  <p align="center">
-    <a href="https://github.com/divyviradiya2/photo-fix" target="_blank"><img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&description=Lightweight+GUI+utility+to+organize+and+batch+process+photos+in+Rust&bg_color=0d1117&title_color=34d399&text_color=e6edf3&icon_color=10b981&border_color=10b981&show_owner=false&cache_seconds=1800" width="48%" alt="Photo-Fix" /></a>
-  </p>
+  <a href="https://github.com/divyviradiya2/photo-fix" target="_blank"><img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&description=Lightweight+GUI+utility+to+organize+and+batch+process+photos+in+Rust&bg_color=0d1117&title_color=34d399&text_color=e6edf3&icon_color=10b981&border_color=10b981&show_owner=false&cache_seconds=1800" width="47%" alt="Photo-Fix" /></a>
 </div>
 
 <br />
