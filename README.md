@@ -6,7 +6,7 @@
 <!-- ANIMATED TYPING SUBTITLE (EMERALD GREEN AESTHETIC) -->
 <div align="center">
   <a href="https://github.com/divyviradiya2">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1000&color=10B981&background=0D111700&center=true&vCenter=true&width=650&lines=Building+high-speed+desktop+utilities+%26+tools;Creator+of+EtherTransfer+(70%2B+%E2%AD%90);Crafting+robust+systems+with+Rust%2C+C%23%2F.NET+%26+Go;Passionate+about+clean+code+%26+performance" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1000&color=10B981&background=0D111700&center=true&vCenter=true&width=650&lines=Building+high-speed+desktop+utilities+%26+tools;Creator+of+EtherTransfer+(70%2B+Stars);Crafting+robust+systems+with+Rust%2C+C%23%2F.NET+%26+Go;Passionate+about+clean+code+%26+performance" alt="Typing SVG" />
   </a>
 </div>
 
@@ -47,13 +47,13 @@
     <td width="55%" valign="top">
       <h3>About Me</h3>
       <p>
-        Hi there! I'm <b>Divy Viradiya</b>, a Software Developer with a strong focus on high-speed desktop utilities, cross-platform apps, systems programming, and modern full-stack web applications.
+        Hi there! I'm <b>Divy Viradiya</b>, a Software Developer focused on building high-speed desktop utilities, cross-platform applications, systems programming, and modern full-stack architectures.
       </p>
       <ul>
-        <li>🚀 <b>Creator of EtherTransfer</b>: High-speed PC-to-PC file transfer over LAN/Ethernet cable.</li>
-        <li>🦀 <b>Active Explorations</b>: Rust, C# / .NET, Avalonia, Distributed Systems & Cloud.</li>
-        <li>🎯 <b>Interests</b>: Systems optimization, desktop architecture, and sleek developer tooling.</li>
-        <li>💬 <b>Ask me about</b>: C#, Rust, TypeScript, Cross-platform GUI development, and Networking.</li>
+        <li><b>Creator of EtherTransfer</b>: High-speed PC-to-PC file transfer over LAN/Ethernet cable.</li>
+        <li><b>Active Explorations</b>: Rust, C# / .NET, Avalonia, Distributed Systems & Cloud.</li>
+        <li><b>Interests</b>: Systems optimization, desktop architecture, and sleek developer tooling.</li>
+        <li><b>Ask me about</b>: C#, Rust, TypeScript, Cross-platform GUI development, and Networking.</li>
       </ul>
     </td>
     <td width="45%" align="center" valign="middle">
@@ -83,53 +83,25 @@
 
 ---
 
-<!-- FEATURED PROJECTS SHOWCASE -->
+<!-- FEATURED PROJECTS SHOWCASE (DYNAMIC CARDS IN DARK & GREEN THEME) -->
 <h3 align="center">Featured Projects</h3>
 
 <div align="center">
-  <table width="100%">
-    <tr>
-      <td width="50%" valign="top">
-        <h3><a href="https://github.com/divyviradiya2/ethertransfer">⚡ EtherTransfer</a></h3>
-        <p>Software to transfer high volumes of folders and files at maximum throughput between two PCs via an Ethernet cable.</p>
-        <p>
-          <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white" />
-          <img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-          <img src="https://img.shields.io/badge/Avalonia-8A2BE2?style=flat-square" />
-          <img src="https://img.shields.io/github/stars/divyviradiya2/ethertransfer?style=flat-square&color=10b981" />
-        </p>
-      </td>
-      <td width="50%" valign="top">
-        <h3><a href="https://github.com/divyviradiya2/photo-fix">🦀 Photo-Fix</a></h3>
-        <p>Blazing-fast image fixing, enhancement, and batch processing utility built with Rust for high reliability.</p>
-        <p>
-          <img src="https://img.shields.io/badge/Rust-DEA584?style=flat-square&logo=rust&logoColor=black" />
-          <img src="https://img.shields.io/badge/Performance-Optimized-10b981?style=flat-square" />
-          <img src="https://img.shields.io/github/stars/divyviradiya2/photo-fix?style=flat-square&color=10b981" />
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top">
-        <h3><a href="https://github.com/divyviradiya2/pocket-mc-desktop">🎮 Pocket MC Desktop</a></h3>
-        <p>Desktop management application for Minecraft server operations and pocket instances.</p>
-        <p>
-          <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white" />
-          <img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-          <img src="https://img.shields.io/badge/Desktop%20App-4B0082?style=flat-square" />
-        </p>
-      </td>
-      <td width="50%" valign="top">
-        <h3><a href="https://github.com/divyviradiya2/DocuVerify">📄 DocuVerify</a> & <a href="https://github.com/divyviradiya2/ecosentinel">🌱 EcoSentinel</a></h3>
-        <p>Mobile applications built for document authentication and real-time environmental monitoring.</p>
-        <p>
-          <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" />
-          <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
-          <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" />
-        </p>
-      </td>
-    </tr>
-  </table>
+  <a href="https://github.com/divyviradiya2/ethertransfer" target="_blank">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=ethertransfer&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="EtherTransfer" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/divyviradiya2/photo-fix" target="_blank">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="Photo-Fix" />
+  </a>
+  <br /><br />
+  <a href="https://github.com/divyviradiya2/pocket-mc-desktop" target="_blank">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=pocket-mc-desktop&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="Pocket MC Desktop" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/divyviradiya2/DocuVerify" target="_blank">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=DocuVerify&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="DocuVerify" />
+  </a>
 </div>
 
 <br />
