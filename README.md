@@ -83,24 +83,38 @@
 
 ---
 
-<!-- MAIN FEATURED PROJECTS (CUSTOM BESPOKE SHOWCASE CARDS) -->
-<h3 align="center">Main Projects</h3>
+<!-- FEATURED PROJECTS (PERFECT 2x2 BALANCED GRID) -->
+<h3 align="center">Featured Projects</h3>
 
 <div align="center">
-  <!-- EtherTransfer Card -->
+  <!-- Row 1: Primary Flagship Systems -->
   <a href="https://github.com/divyviradiya2/ethertransfer" target="_blank">
-    <img src="./assets/card-ethertransfer.svg" width="97%" alt="EtherTransfer Showcase Card" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=ethertransfer&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="EtherTransfer" />
   </a>
-  <br /><br />
-  <!-- PocketMC Windows Card -->
+  &nbsp;
   <a href="https://github.com/PocketMC/pocket-mc-windows" target="_blank">
-    <img src="./assets/card-pocketmc.svg" width="97%" alt="PocketMC Windows Showcase Card" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=PocketMC&repo=pocket-mc-windows&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="PocketMC Windows" />
   </a>
   <br /><br />
-  <!-- Photo-Fix Card -->
+  <!-- Row 2: Rust Engine + Mobile Application -->
   <a href="https://github.com/divyviradiya2/photo-fix" target="_blank">
-    <img src="./assets/card-photofix.svg" width="97%" alt="Photo-Fix Showcase Card" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&description=Lightweight+GUI+utility+to+organize+and+batch+process+photos+in+Rust&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="Photo-Fix" />
   </a>
+  &nbsp;
+  <a href="https://github.com/divyviradiya2/DocuVerify" target="_blank">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=DocuVerify&description=Mobile+application+built+for+document+authentication+and+verification&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="DocuVerify" />
+  </a>
+</div>
+
+<br />
+
+---
+
+<!-- CONTRIBUTION GRAPH SNAKE ANIMATION -->
+<h3 align="center">Contribution Activity</h3>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/divyviradiya2/divyviradiya2/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution Snake Animation" />
 </div>
 
 <br />
