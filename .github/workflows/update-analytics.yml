@@ -22,6 +22,8 @@ jobs:
           python-version: '3.11'
 
       - name: Generate fresh SVG analytics cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python generate_dashboard_cards.py
 
       - name: Commit and push changes

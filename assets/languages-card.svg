@@ -49,7 +49,6 @@
 
   <!-- Donut Chart -->
   <g>
-    <!-- Background track ring -->
     <circle cx="265" cy="108" r="45" fill="none" stroke="#161b22" stroke-width="22"/>
     <circle cx="265" cy="108" r="45" fill="none" stroke="#178600" stroke-width="22" stroke-dasharray="153.91 128.84" stroke-dashoffset="-0.00" transform="rotate(-90 265 108)"/>
     <circle cx="265" cy="108" r="45" fill="none" stroke="#00B4AB" stroke-width="22" stroke-dasharray="47.55 235.20" stroke-dashoffset="-153.91" transform="rotate(-90 265 108)"/>
