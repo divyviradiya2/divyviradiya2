@@ -13,23 +13,23 @@
 <!-- ORGANIZATIONS & SOCIAL BADGES -->
 <p align="center">
   <a href="https://pocketmc.github.io/pocket-mc-website/" target="_blank">
-    <img src="https://img.shields.io/badge/PocketMC-0d1117?style=flat-square&logo=electron&logoColor=10b981&label=WEBSITE&labelColor=161b22" alt="PocketMC" />
+    <img src="https://img.shields.io/badge/PocketMC-10B981?style=for-the-badge&logo=electron&logoColor=white" alt="PocketMC" />
   </a>
-  &nbsp;&nbsp;
+  &nbsp;
   <a href="https://ds-labs.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/DS_Labs-0d1117?style=flat-square&logo=vercel&logoColor=10b981&label=WEBSITE&labelColor=161b22" alt="DS Labs" />
+    <img src="https://img.shields.io/badge/DS_Labs-181717?style=for-the-badge&logo=vercel&logoColor=10b981" alt="DS Labs" />
   </a>
-  &nbsp;&nbsp;
+  &nbsp;
   <a href="https://instagram.com/divyviradiya" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-0d1117?style=flat-square&logo=instagram&logoColor=E4405F&label=@divyviradiya&labelColor=161b22" alt="Instagram" />
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
-  &nbsp;&nbsp;
+  &nbsp;
   <a href="https://reddit.com/user/divyviradiya" target="_blank">
-    <img src="https://img.shields.io/badge/Reddit-0d1117?style=flat-square&logo=reddit&logoColor=FF4500&label=u/divyviradiya&labelColor=161b22" alt="Reddit" />
+    <img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit" />
   </a>
-  &nbsp;&nbsp;
+  &nbsp;
   <a href="mailto:divyviradiya2@gmail.com">
-    <img src="https://img.shields.io/badge/Email-0d1117?style=flat-square&logo=gmail&logoColor=EA4335&label=Contact&labelColor=161b22" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
 </p>
 
