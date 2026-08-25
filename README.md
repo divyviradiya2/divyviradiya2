@@ -52,8 +52,8 @@ Alongside low-level systems, I build responsive, production-ready web applicatio
 <h2 align="center">Tech Stack & Tools</h2>
 
 <div align="center">
-  <p><b>Systems & Core Languages</b></p>
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,rust,cpp,go,py&perline=8" alt="Systems & Core Languages" />
+  <p><b>Core Languages</b></p>
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,rust,cpp,go,py,ts,js,html,css&perline=10" alt="Core Languages" />
   <br /><br />
 
   <p><b>Desktop GUI & Native Frameworks</b></p>
@@ -67,8 +67,8 @@ Alongside low-level systems, I build responsive, production-ready web applicatio
   </p>
   <br />
 
-  <p><b>Full-Stack Web & Frontend</b></p>
-  <img src="https://skillicons.dev/icons?i=ts,js,react,next,tailwind,vite,redux,html,css&perline=10" alt="Full-Stack Web & Frontend" />
+  <p><b>Frontend & Web Frameworks</b></p>
+  <img src="https://skillicons.dev/icons?i=react,next,tailwind,vite,redux&perline=8" alt="Frontend & Web Frameworks" />
   <br /><br />
 
   <p><b>Backend & Databases</b></p>
