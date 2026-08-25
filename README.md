@@ -12,16 +12,12 @@
 
 <!-- ORGANIZATIONS & SOCIAL BADGES -->
 <p align="center">
-  <a href="https://github.com/PocketMC" target="_blank">
-    <img src="https://img.shields.io/badge/PocketMC-Founder-10b981?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="PocketMC" />
+  <a href="https://pocketmc.github.io/pocket-mc-website/" target="_blank">
+    <img src="https://img.shields.io/badge/PocketMC-10b981?style=for-the-badge&logo=electron&logoColor=white&labelColor=0d1117" alt="PocketMC" />
   </a>
   &nbsp;
-  <a href="https://github.com/divyviradiya2" target="_blank">
-    <img src="https://img.shields.io/badge/DS_Labs-Founder-10b981?style=for-the-badge&logo=electron&logoColor=10b981&labelColor=0d1117" alt="DS Labs" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/divyviradiya2" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  <a href="https://ds-labs.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/DS_Labs-10b981?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0d1117" alt="DS Labs" />
   </a>
   &nbsp;
   <a href="https://instagram.com/divyviradiya" target="_blank">
