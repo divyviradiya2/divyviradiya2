@@ -83,22 +83,22 @@
 
 ---
 
-<!-- MAIN FEATURED PROJECTS (DYNAMIC LIVE CARDS IN DARK & GREEN THEME) -->
+<!-- MAIN FEATURED PROJECTS (HERO + DUO BALANCED LAYOUT) -->
 <h3 align="center">Main Projects</h3>
 
 <div align="center">
-  <!-- Row 1: Primary Flagship Projects -->
+  <!-- Flagship Hero Project (Full-Width Feature) -->
   <a href="https://github.com/divyviradiya2/ethertransfer" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=ethertransfer&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="EtherTransfer" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/PocketMC/pocket-mc-windows" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=PocketMC&repo=pocket-mc-windows&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=true" width="48%" alt="PocketMC Windows" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=ethertransfer&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="97%" alt="EtherTransfer" />
   </a>
   <br /><br />
-  <!-- Row 2: Rust High Performance Tool -->
+  <!-- Supporting Projects Duo Grid -->
+  <a href="https://github.com/PocketMC/pocket-mc-windows" target="_blank">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=PocketMC&repo=pocket-mc-windows&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="PocketMC Windows" />
+  </a>
+  &nbsp;
   <a href="https://github.com/divyviradiya2/photo-fix" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&description=High-performance+batch+image+fixing+and+optimization+engine+built+with+Rust&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="Photo-Fix" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="Photo-Fix" />
   </a>
 </div>
 
