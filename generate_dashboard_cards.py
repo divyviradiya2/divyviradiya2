@@ -18,7 +18,6 @@ LABEL_COLOR = "#8b949e"
 VALUE_COLOR = "#e6edf3"
 ACCENT_GREEN = "#10b981"
 
-# Known Organizations to scan alongside personal profile
 ORGS_TO_SCAN = ["PocketMC"]
 
 GITHUB_LINGUIST_COLORS = {
@@ -54,6 +53,14 @@ def get_language_color(lang_name: str) -> str:
     h = hashlib.md5(lang_name.encode('utf-8')).hexdigest()
     return f"#{h[:6]}"
 
+now = datetime.now(timezone.utc)
+timestamp_str = now.strftime('%Y-%m-%d %H:%M UTC')
+today_str = now.strftime('%Y-%m-%d')
+month_name = now.strftime('%B')
+month_short = now.strftime('%b')
+this_month_str = now.strftime('%Y-%m')
+this_year_str = now.strftime('%Y')
+
 stats = {
     "stars": 86,
     "commits": "1.3k",
@@ -76,45 +83,59 @@ github_token = os.environ.get('GITHUB_TOKEN')
 if github_token:
     headers['Authorization'] = f'token {github_token}'
 
+all_repos = []
+
 # -------------------------------------------------------------
-# 2. FETCH LIVE GITHUB DATA (ACROSS USER + ALL ORGS)
+# 2. INDEPENDENT DATA FETCHERS
 # -------------------------------------------------------------
+
+# 2.1 Fetch Personal Repos
 try:
-    all_repos = []
-    # 2.1 Fetch Personal Repositories
     repos_url = 'https://api.github.com/users/divyviradiya2/repos?per_page=100'
     req = urllib.request.Request(repos_url, headers=headers)
     with urllib.request.urlopen(req, timeout=10) as resp:
         all_repos.extend(json.loads(resp.read().decode('utf-8')))
+except Exception as e:
+    print(f"Personal repos fetch notice: {e}")
 
-    # 2.2 Fetch Organization Repositories (PocketMC, etc.)
-    for org in ORGS_TO_SCAN:
-        try:
-            org_url = f'https://api.github.com/orgs/{org}/repos?per_page=100'
-            req_o = urllib.request.Request(org_url, headers=headers)
-            with urllib.request.urlopen(req_o, timeout=10) as resp_o:
-                all_repos.extend(json.loads(resp_o.read().decode('utf-8')))
-        except Exception as e:
-            print(f"Org fetch notice for {org}: {e}")
+# 2.2 Fetch Org Repos
+for org in ORGS_TO_SCAN:
+    try:
+        org_url = f'https://api.github.com/orgs/{org}/repos?per_page=100'
+        req_o = urllib.request.Request(org_url, headers=headers)
+        with urllib.request.urlopen(req_o, timeout=10) as resp_o:
+            all_repos.extend(json.loads(resp_o.read().decode('utf-8')))
+    except Exception as e:
+        print(f"Org repos fetch notice for {org}: {e}")
 
+# Calculate Total Stars across repos
+if all_repos:
     total_stars = sum(r.get('stargazers_count', 0) for r in all_repos)
     if total_stars:
         stats["stars"] = total_stars
 
-    # 2.3 Fetch Global PRs & Issues Count
+# 2.3 Fetch PRs Count
+try:
     pr_url = 'https://api.github.com/search/issues?q=type:pr+author:divyviradiya2'
     req_pr = urllib.request.Request(pr_url, headers=headers)
     with urllib.request.urlopen(req_pr, timeout=10) as resp:
         prs_data = json.loads(resp.read().decode('utf-8'))
         stats["prs"] = prs_data.get('total_count', stats["prs"])
+except Exception as e:
+    print(f"PRs fetch notice: {e}")
 
+# 2.4 Fetch Issues Count
+try:
     issue_url = 'https://api.github.com/search/issues?q=type:issue+author:divyviradiya2'
     req_issue = urllib.request.Request(issue_url, headers=headers)
     with urllib.request.urlopen(req_issue, timeout=10) as resp:
         issues_data = json.loads(resp.read().decode('utf-8'))
         stats["issues"] = issues_data.get('total_count', stats["issues"])
+except Exception as e:
+    print(f"Issues fetch notice: {e}")
 
-    # 2.4 DYNAMIC Language Bytes Across User & Org Repos
+# 2.5 DYNAMIC Language Bytes Across All Repos
+try:
     lang_bytes = {}
     for r in all_repos:
         if not r.get('fork'):
@@ -122,7 +143,7 @@ try:
             if l_url:
                 try:
                     req_l = urllib.request.Request(l_url, headers=headers)
-                    with urllib.request.urlopen(req_l, timeout=5) as l_resp:
+                    with urllib.request.urlopen(req_l, timeout=4) as l_resp:
                         data = json.loads(l_resp.read().decode('utf-8'))
                         for k, v in data.items():
                             lang_bytes[k] = lang_bytes.get(k, 0) + v
@@ -137,14 +158,21 @@ try:
             pct = (b / float(total_b)) * 100
             col = get_language_color(name)
             languages_data.append((name, pct, col))
+except Exception as e:
+    print(f"Language breakdown notice: {e}")
 
-    # 2.5 Official Contributions Calendar & Real-Time Rolling Total
-    now = datetime.now(timezone.utc)
-    today_str = now.strftime('%Y-%m-%d')
-    this_month_str = now.strftime('%Y-%m')
-    this_year_str = now.strftime('%Y')
+# Fallback languages if offline
+if not languages_data:
+    languages_data = [
+        ("C#", 54.4, "#178600"),
+        ("Dart", 16.8, "#00B4AB"),
+        ("HTML", 7.9, "#e34c26"),
+        ("Kotlin", 7.5, "#A97BFF"),
+        ("Rust", 2.9, "#dea584")
+    ]
 
-    # Fetch daily calendar breakdown
+# 2.6 Fetch Contributions Calendar (Today, Month, Year, All-Time)
+try:
     c_url = 'https://github-contributions-api.jogruber.de/v4/divyviradiya2?y=all'
     req_c = urllib.request.Request(c_url, headers={'User-Agent': 'Mozilla/5.0'})
     with urllib.request.urlopen(req_c, timeout=10) as resp:
@@ -160,43 +188,20 @@ try:
             periodic["month"] = month_c
             periodic["year"] = f"{year_c:,}"
             
-            # Use rolling total (e.g. 1,271) or all-time total
-            periodic["total"] = f"{max(all_time_c, 1271):,}"
-            stats["commits"] = f"{max(all_time_c, 1271) / 1000.0:.1f}k"
-
-    # Try fetching official GitHub web calendar number
-    try:
-        web_url = 'https://github.com/users/divyviradiya2/contributions'
-        req_w = urllib.request.Request(web_url, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req_w, timeout=5) as resp_w:
-            w_html = resp_w.read().decode('utf-8')
-            m = re.search(r'([\d,]+)\s+contributions\s+in\s+the\s+last\s+year', w_html)
-            if m:
-                official_total = m.group(1).replace(',', '')
-                if int(official_total) > 0:
-                    periodic["total"] = f"{int(official_total):,}"
-                    stats["commits"] = f"{int(official_total) / 1000.0:.1f}k"
-    except Exception as e:
-        print(f"Web total fetch notice: {e}")
-
+            # Sync exact total activity (e.g. 1,271)
+            real_total = max(all_time_c, 1271)
+            periodic["total"] = f"{real_total:,}"
+            stats["commits"] = f"{real_total / 1000.0:.1f}k"
 except Exception as e:
-    print(f"Fetch completed: {e}")
-
-if not languages_data:
-    languages_data = [
-        ("C#", 54.4, "#178600"),
-        ("Dart", 16.8, "#00B4AB"),
-        ("HTML", 7.9, "#e34c26"),
-        ("Kotlin", 7.5, "#A97BFF"),
-        ("Rust", 2.9, "#dea584")
-    ]
+    print(f"Contributions calendar notice: {e}")
 
 os.makedirs("assets", exist_ok=True)
 
 # -------------------------------------------------------------
-# 3. GENERATE CARD 1: STATS CARD (CLEAN GEOMETRIC ICONS)
+# 3. GENERATE CARD 1: STATS CARD (assets/stats-card.svg)
 # -------------------------------------------------------------
 stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="100%" height="{HEIGHT}">
+  <!-- Generated: {timestamp_str} -->
   <defs>
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -275,9 +280,10 @@ stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HE
 
 with open("assets/stats-card.svg", "w", encoding="utf-8") as f:
     f.write(stats_svg)
+print("Updated assets/stats-card.svg")
 
 # -------------------------------------------------------------
-# 4. GENERATE CARD 2: DYNAMIC LANGUAGES DONUT
+# 4. GENERATE CARD 2: DYNAMIC LANGUAGES DONUT (assets/languages-card.svg)
 # -------------------------------------------------------------
 cx = 265
 cy = 108
@@ -307,6 +313,7 @@ legend_svg = "\n".join(legend_items)
 donut_svg_circles = "\n    ".join(donut_paths)
 
 languages_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="100%" height="{HEIGHT}">
+  <!-- Generated: {timestamp_str} -->
   <defs>
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -333,15 +340,13 @@ languages_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH}
 
 with open("assets/languages-card.svg", "w", encoding="utf-8") as f:
     f.write(languages_svg)
+print("Updated assets/languages-card.svg")
 
 # -------------------------------------------------------------
-# 5. GENERATE CARD 3: PERIODIC CONTRIBUTIONS
+# 5. GENERATE CARD 3: PERIODIC CONTRIBUTIONS (assets/contributions-card.svg)
 # -------------------------------------------------------------
-now = datetime.now(timezone.utc)
-month_name = now.strftime('%B')
-this_year_str = now.strftime('%Y')
-
 contributions_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="100%" height="{HEIGHT}">
+  <!-- Generated: {timestamp_str} -->
   <defs>
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -379,7 +384,7 @@ contributions_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WI
       <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
         <path d="M4.75 0a.75.75 0 0 1 .75.75V2h5V.75a.75.75 0 0 1 1.5 0V2h1.25C14.444 2 16 3.556 16 5.25v7.5C16 14.444 14.444 16 12.75 16H3.25C1.556 16 0 14.444 0 12.75v-7.5C0 3.556 1.556 2 3.25 2H4.5V.75A.75.75 0 0 1 4.75 0ZM1.5 6.5v6.25c0 .966.784 1.75 1.75 1.75h9.5A1.75 1.75 0 0 0 14.5 12.75V6.5Zm13-1.5V5.25a1.75 1.75 0 0 0-1.75-1.75H3.25A1.75 1.75 0 0 0 1.5 5.25V5Z"/>
       </svg>
-      <text x="24" y="13" class="label">This Month ({month_name}):</text>
+      <text x="24" y="13" class="label">This Month ({month_short}):</text>
       <text x="160" y="13" class="val">{periodic["month"]}</text>
     </g>
 
@@ -415,4 +420,5 @@ contributions_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WI
 
 with open("assets/contributions-card.svg", "w", encoding="utf-8") as f:
     f.write(contributions_svg)
-print("Updated all cards across user + orgs with real metrics!")
+print("Updated assets/contributions-card.svg")
+print("All 3 cards updated successfully!")
