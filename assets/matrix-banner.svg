@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="100%" height="220">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d12"/>
+      <stop offset="50%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#05120d"/>
+    </linearGradient>
+
+    <!-- Matrix Green Vertical Fade for Trails -->
+    <linearGradient id="matrixGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" stop-opacity="0.1"/>
+      <stop offset="60%" stop-color="#10b981" stop-opacity="0.8"/>
+      <stop offset="90%" stop-color="#34d399" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1"/>
+    </linearGradient>
+
+    <!-- Center Card Shadow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .matrix-char {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      fill: url(#matrixGreen);
+    }
+
+    @keyframes drop {
+      0% { transform: translateY(-240px); opacity: 0; }
+      15% { opacity: 0.85; }
+      85% { opacity: 0.85; }
+      100% { transform: translateY(260px); opacity: 0; }
+    }
+
+    /* Staggered Infinite Columns */
+    .c1  { animation: drop 3.2s linear infinite; animation-delay: 0.0s; }
+    .c2  { animation: drop 2.6s linear infinite; animation-delay: -1.4s; }
+    .c3  { animation: drop 3.8s linear infinite; animation-delay: -0.7s; }
+    .c4  { animation: drop 2.9s linear infinite; animation-delay: -2.1s; }
+    .c5  { animation: drop 3.4s linear infinite; animation-delay: -0.3s; }
+    .c6  { animation: drop 2.4s linear infinite; animation-delay: -1.8s; }
+    .c7  { animation: drop 3.9s linear infinite; animation-delay: -1.1s; }
+    .c8  { animation: drop 2.8s linear infinite; animation-delay: -2.6s; }
+    .c9  { animation: drop 3.3s linear infinite; animation-delay: -0.9s; }
+    .c10 { animation: drop 2.5s linear infinite; animation-delay: -1.9s; }
+    .c11 { animation: drop 3.7s linear infinite; animation-delay: -0.5s; }
+    .c12 { animation: drop 2.7s linear infinite; animation-delay: -2.3s; }
+    .c13 { animation: drop 3.1s linear infinite; animation-delay: -1.2s; }
+    .c14 { animation: drop 3.6s linear infinite; animation-delay: -0.8s; }
+    .c15 { animation: drop 2.3s linear infinite; animation-delay: -1.7s; }
+    .c16 { animation: drop 3.5s linear infinite; animation-delay: -2.5s; }
+    .c17 { animation: drop 2.9s linear infinite; animation-delay: -0.2s; }
+    .c18 { animation: drop 3.3s linear infinite; animation-delay: -1.5s; }
+    .c19 { animation: drop 2.6s linear infinite; animation-delay: -2.0s; }
+    .c20 { animation: drop 3.8s linear infinite; animation-delay: -0.6s; }
+    .c21 { animation: drop 2.8s linear infinite; animation-delay: -1.3s; }
+    .c22 { animation: drop 3.4s linear infinite; animation-delay: -2.2s; }
+    .c23 { animation: drop 2.5s linear infinite; animation-delay: -0.4s; }
+    .c24 { animation: drop 3.6s linear infinite; animation-delay: -1.6s; }
+    .c25 { animation: drop 3.0s linear infinite; animation-delay: -2.7s; }
+
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 44px;
+      fill: #ffffff;
+      letter-spacing: 1px;
+    }
+
+    .subtitle-text {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-weight: 500;
+      font-size: 14px;
+      fill: #10b981;
+      letter-spacing: 0.5px;
+    }
+  </style>
+
+  <!-- Dark Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" rx="10" />
+
+  <!-- Matrix Falling Code Rain Streams -->
+  <g opacity="0.75">
+    <text x="25" y="0" class="matrix-char c1">0<tspan x="25" dy="16">1</tspan><tspan x="25" dy="16">0</tspan><tspan x="25" dy="16">x</tspan><tspan x="25" dy="16">1</tspan><tspan x="25" dy="16">0</tspan><tspan x="25" dy="16">1</tspan><tspan x="25" dy="16">0</tspan><tspan x="25" dy="16">1</tspan></text>
+    <text x="60" y="0" class="matrix-char c2">&lt;<tspan x="60" dy="16">c</tspan><tspan x="60" dy="16">#</tspan><tspan x="60" dy="16">&gt;</tspan><tspan x="60" dy="16">0</tspan><tspan x="60" dy="16">1</tspan><tspan x="60" dy="16">1</tspan><tspan x="60" dy="16">0</tspan><tspan x="60" dy="16">1</tspan></text>
+    <text x="95" y="0" class="matrix-char c3">r<tspan x="95" dy="16">u</tspan><tspan x="95" dy="16">s</tspan><tspan x="95" dy="16">t</tspan><tspan x="95" dy="16">0</tspan><tspan x="95" dy="16">1</tspan><tspan x="95" dy="16">0</tspan><tspan x="95" dy="16">1</tspan><tspan x="95" dy="16">1</tspan></text>
+    <text x="130" y="0" class="matrix-char c4">1<tspan x="130" dy="16">0</tspan><tspan x="130" dy="16">1</tspan><tspan x="130" dy="16">1</tspan><tspan x="130" dy="16">0</tspan><tspan x="130" dy="16">x</tspan><tspan x="130" dy="16">f</tspan><tspan x="130" dy="16">f</tspan><tspan x="130" dy="16">1</tspan></text>
+    <text x="165" y="0" class="matrix-char c5">f<tspan x="165" dy="16">n</tspan><tspan x="165" dy="16">(</tspan><tspan x="165" dy="16">)</tspan><tspan x="165" dy="16">0</tspan><tspan x="165" dy="16">1</tspan><tspan x="165" dy="16">0</tspan><tspan x="165" dy="16">1</tspan><tspan x="165" dy="16">0</tspan></text>
+    <text x="200" y="0" class="matrix-char c6">0<tspan x="200" dy="16">1</tspan><tspan x="200" dy="16">0</tspan><tspan x="200" dy="16">1</tspan><tspan x="200" dy="16">1</tspan><tspan x="200" dy="16">0</tspan><tspan x="200" dy="16">1</tspan><tspan x="200" dy="16">0</tspan><tspan x="200" dy="16">1</tspan></text>
+    <text x="235" y="0" class="matrix-char c7">a<tspan x="235" dy="16">s</tspan><tspan x="235" dy="16">y</tspan><tspan x="235" dy="16">n</tspan><tspan x="235" dy="16">c</tspan><tspan x="235" dy="16">0</tspan><tspan x="235" dy="16">1</tspan><tspan x="235" dy="16">1</tspan><tspan x="235" dy="16">0</tspan></text>
+    <text x="270" y="0" class="matrix-char c8">1<tspan x="270" dy="16">0</tspan><tspan x="270" dy="16">1</tspan><tspan x="270" dy="16">0</tspan><tspan x="270" dy="16">1</tspan><tspan x="270" dy="16">0</tspan><tspan x="270" dy="16">1</tspan><tspan x="270" dy="16">0</tspan><tspan x="270" dy="16">1</tspan></text>
+    <text x="305" y="0" class="matrix-char c9">0<tspan x="305" dy="16">x</tspan><tspan x="305" dy="16">7</tspan><tspan x="305" dy="16">f</tspan><tspan x="305" dy="16">1</tspan><tspan x="305" dy="16">0</tspan><tspan x="305" dy="16">1</tspan><tspan x="305" dy="16">0</tspan><tspan x="305" dy="16">1</tspan></text>
+    <text x="340" y="0" class="matrix-char c10">1<tspan x="340" dy="16">1</tspan><tspan x="340" dy="16">0</tspan><tspan x="340" dy="16">1</tspan><tspan x="340" dy="16">0</tspan><tspan x="340" dy="16">1</tspan><tspan x="340" dy="16">0</tspan><tspan x="340" dy="16">1</tspan><tspan x="340" dy="16">0</tspan></text>
+    <text x="375" y="0" class="matrix-char c11">g<tspan x="375" dy="16">i</tspan><tspan x="375" dy="16">t</tspan><tspan x="375" dy="16">0</tspan><tspan x="375" dy="16">1</tspan><tspan x="375" dy="16">0</tspan><tspan x="375" dy="16">1</tspan><tspan x="375" dy="16">1</tspan><tspan x="375" dy="16">0</tspan></text>
+    <text x="410" y="0" class="matrix-char c12">0<tspan x="410" dy="16">1</tspan><tspan x="410" dy="16">0</tspan><tspan x="410" dy="16">1</tspan><tspan x="410" dy="16">1</tspan><tspan x="410" dy="16">0</tspan><tspan x="410" dy="16">1</tspan><tspan x="410" dy="16">0</tspan><tspan x="410" dy="16">1</tspan></text>
+    <text x="445" y="0" class="matrix-char c13">1<tspan x="445" dy="16">0</tspan><tspan x="445" dy="16">1</tspan><tspan x="445" dy="16">0</tspan><tspan x="445" dy="16">1</tspan><tspan x="445" dy="16">0</tspan><tspan x="445" dy="16">1</tspan><tspan x="445" dy="16">0</tspan><tspan x="445" dy="16">1</tspan></text>
+    <text x="480" y="0" class="matrix-char c14">n<tspan x="480" dy="16">e</tspan><tspan x="480" dy="16">t</tspan><tspan x="480" dy="16">0</tspan><tspan x="480" dy="16">1</tspan><tspan x="480" dy="16">0</tspan><tspan x="480" dy="16">1</tspan><tspan x="480" dy="16">1</tspan><tspan x="480" dy="16">0</tspan></text>
+    <text x="515" y="0" class="matrix-char c15">0<tspan x="515" dy="16">1</tspan><tspan x="515" dy="16">0</tspan><tspan x="515" dy="16">1</tspan><tspan x="515" dy="16">1</tspan><tspan x="515" dy="16">0</tspan><tspan x="515" dy="16">1</tspan><tspan x="515" dy="16">0</tspan><tspan x="515" dy="16">1</tspan></text>
+    <text x="550" y="0" class="matrix-char c16">1<tspan x="550" dy="16">0</tspan><tspan x="550" dy="16">1</tspan><tspan x="550" dy="16">0</tspan><tspan x="550" dy="16">1</tspan><tspan x="550" dy="16">0</tspan><tspan x="550" dy="16">1</tspan><tspan x="550" dy="16">0</tspan><tspan x="550" dy="16">1</tspan></text>
+    <text x="585" y="0" class="matrix-char c17">s</tspan><tspan x="585" dy="16">y</tspan><tspan x="585" dy="16">s</tspan><tspan x="585" dy="16">0</tspan><tspan x="585" dy="16">1</tspan><tspan x="585" dy="16">0</tspan><tspan x="585" dy="16">1</tspan><tspan x="585" dy="16">1</tspan><tspan x="585" dy="16">0</tspan></text>
+    <text x="620" y="0" class="matrix-char c18">0<tspan x="620" dy="16">1</tspan><tspan x="620" dy="16">0</tspan><tspan x="620" dy="16">1</tspan><tspan x="620" dy="16">1</tspan><tspan x="620" dy="16">0</tspan><tspan x="620" dy="16">1</tspan><tspan x="620" dy="16">0</tspan><tspan x="620" dy="16">1</tspan></text>
+    <text x="655" y="0" class="matrix-char c19">1<tspan x="655" dy="16">0</tspan><tspan x="655" dy="16">1</tspan><tspan x="655" dy="16">0</tspan><tspan x="655" dy="16">1</tspan><tspan x="655" dy="16">0</tspan><tspan x="655" dy="16">1</tspan><tspan x="655" dy="16">0</tspan><tspan x="655" dy="16">1</tspan></text>
+    <text x="690" y="0" class="matrix-char c20">&lt;<tspan x="690" dy="16">/</tspan><tspan x="690" dy="16">&gt;</tspan><tspan x="690" dy="16">0</tspan><tspan x="690" dy="16">1</tspan><tspan x="690" dy="16">0</tspan><tspan x="690" dy="16">1</tspan><tspan x="690" dy="16">1</tspan><tspan x="690" dy="16">0</tspan></text>
+    <text x="725" y="0" class="matrix-char c21">0<tspan x="725" dy="16">1</tspan><tspan x="725" dy="16">0</tspan><tspan x="725" dy="16">1</tspan><tspan x="725" dy="16">1</tspan><tspan x="725" dy="16">0</tspan><tspan x="725" dy="16">1</tspan><tspan x="725" dy="16">0</tspan><tspan x="725" dy="16">1</tspan></text>
+    <text x="760" y="0" class="matrix-char c22">1<tspan x="760" dy="16">0</tspan><tspan x="760" dy="16">1</tspan><tspan x="760" dy="16">0</tspan><tspan x="760" dy="16">1</tspan><tspan x="760" dy="16">0</tspan><tspan x="760" dy="16">1</tspan><tspan x="760" dy="16">0</tspan><tspan x="760" dy="16">1</tspan></text>
+    <text x="795" y="0" class="matrix-char c23">0<tspan x="795" dy="16">1</tspan><tspan x="795" dy="16">0</tspan><tspan x="795" dy="16">1</tspan><tspan x="795" dy="16">1</tspan><tspan x="795" dy="16">0</tspan><tspan x="795" dy="16">1</tspan><tspan x="795" dy="16">0</tspan><tspan x="795" dy="16">1</tspan></text>
+    <text x="830" y="0" class="matrix-char c24">1<tspan x="830" dy="16">0</tspan><tspan x="830" dy="16">1</tspan><tspan x="830" dy="16">0</tspan><tspan x="830" dy="16">1</tspan><tspan x="830" dy="16">0</tspan><tspan x="830" dy="16">1</tspan><tspan x="830" dy="16">0</tspan><tspan x="830" dy="16">1</tspan></text>
+    <text x="865" y="0" class="matrix-char c25">0<tspan x="865" dy="16">1</tspan><tspan x="865" dy="16">0</tspan><tspan x="865" dy="16">1</tspan><tspan x="865" dy="16">1</tspan><tspan x="865" dy="16">0</tspan><tspan x="865" dy="16">1</tspan><tspan x="865" dy="16">0</tspan><tspan x="865" dy="16">1</tspan></text>
+  </g>
+
+  <!-- Center Floating Glassmorphic Backdrop for Contrast -->
+  <rect x="150" y="45" width="600" height="130" rx="16" fill="#0d1117" fill-opacity="0.88" stroke="#238636" stroke-width="1.5" filter="url(#glow)"/>
+
+  <!-- Centered Typography -->
+  <g text-anchor="middle">
+    <!-- Main Name Header -->
+    <text x="450" y="105" class="title-text">Divy Viradiya</text>
+    <!-- Subtitle / Roles -->
+    <text x="450" y="142" class="subtitle-text">Software Engineer  •  Systems Builder  •  Performance &amp; Tools</text>
+  </g>
+</svg>

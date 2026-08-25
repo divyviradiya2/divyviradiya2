@@ -1,6 +1,6 @@
-<!-- HEADER ANIMATED EMERALD GRADIENT BANNER -->
+<!-- HEADER ANIMATED MATRIX FALLING CODE BANNER -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,35:064e3b,70:10b981,100:6ee7b7&height=220&section=header&text=Divy%20Viradiya&fontSize=52&fontAlignY=38&desc=Software%20Engineer%20%E2%80%A2%20Open%20Source%20Builder%20%E2%80%A2%20Systems%20Architect&descAlignY=58&descAlign=50&animation=fadeIn" width="100%"/>
+  <img src="https://raw.githubusercontent.com/divyviradiya2/divyviradiya2/master/assets/matrix-banner.svg" width="100%" alt="Divy Viradiya - Matrix Digital Rain Banner"/>
 </div>
 
 <!-- ANIMATED TYPING SUBTITLE (EMERALD GREEN AESTHETIC) -->
