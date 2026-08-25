@@ -32,9 +32,9 @@
 
 I am a second-year Computer Engineering undergraduate at **LD College of Engineering, Ahmedabad**, living in **Surat, Gujarat**.
 
-Most of my time is spent engineering fast, practical software across the entire stack. On the systems side, I focus on native desktop clients, custom networking protocols, and performance-critical tooling in **C# / .NET** and **Rust**.
+Most of my time is spent engineering fast, practical software across the entire stack. On the systems side, I focus on building native desktop clients, exploring custom networking protocols, and designing performance-critical tooling with minimal overhead.
 
-Alongside low-level systems, I build responsive, production-ready web platforms with **TypeScript, Next.js, and modern API architectures**, while integrating **practical AI pipelines, LLM-driven tooling, and agentic workflows** directly into software products to solve complex real-world problems.
+Alongside low-level systems, I build responsive, production-ready web applications and architectures, while integrating practical AI pipelines, automation systems, and agentic workflows directly into software products to solve complex real-world problems.
 
 <br />
 
