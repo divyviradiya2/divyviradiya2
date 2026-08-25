@@ -21,29 +21,13 @@
 
 <br />
 
-<!-- ABOUT ME -->
-<table>
-  <tr>
-    <td width="58%" valign="top">
-      <h3>About Me</h3>
-      <p>
-        Hey! I'm <b>Divy Viradiya</b> — a builder, systems hacker, and founder based in <b>Surat, Gujarat</b>. Currently in my 2nd year studying Computer Engineering at <b>LD College of Engineering (LDCE)</b>.
-      </p>
-      <p>
-        I build software out of pure obsession with speed, low overhead, and practical utility. Rather than chasing trends, I focus on crafting native desktop applications, low-level tooling, networking engines, and scalable tools that solve real problems.
-      </p>
-      <ul>
-        <li>🚀 <b>Founder of PocketMC</b>: Desktop management application & server orchestration suite for Minecraft instances.</li>
-        <li>🔬 <b>Founder of DS Labs</b>: Specialized software systems, developer utilities, and high-performance tools.</li>
-        <li>⚡ <b>Creator of EtherTransfer &amp; Photo-Fix</b>: High-speed PC-to-PC LAN file transfer &amp; batch image processing engine in Rust &amp; C#.</li>
-        <li>🛠️ <b>Core Focus</b>: Systems Programming, Cross-Platform GUI, Networking Protocols, Rust, C# / .NET, and Performance Engineering.</li>
-      </ul>
-    </td>
-    <td width="42%" align="center" valign="middle">
-      <img src="./assets/about-card.svg" width="100%" alt="Engineer Terminal Card" />
-    </td>
-  </tr>
-</table>
+### ⚡ About Me
+
+- 📍 Based in **Surat, Gujarat** • 2nd Year Computer Engineering @ **LDCE**
+- 🛠️ Building fast native desktop applications, systems tooling, and networking software in **C# / .NET** and **Rust**
+- 🚀 Founder @ **[PocketMC](https://pocketmc.github.io/pocket-mc-website/)** — Local server & instance manager for Minecraft
+- 🔬 Founder @ **[DS Labs](https://ds-labs.vercel.app)** — Experimental software & developer utilities
+- 📦 Creator of **[EtherTransfer](https://github.com/divyviradiya2/ethertransfer)** (High-speed LAN file transfer) & **[Photo-Fix](https://github.com/divyviradiya2/photo-fix)** (Batch photo organizer)
 
 ---
 
