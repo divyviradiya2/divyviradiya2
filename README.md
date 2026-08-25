@@ -44,7 +44,7 @@
 <!-- ABOUT ME -->
 <table>
   <tr>
-    <td width="60%" valign="top">
+    <td width="55%" valign="top">
       <h3>⚡ About Me</h3>
       <p>
         Hi there! I'm <b>Divy Viradiya</b>, a Software Developer with a strong focus on high-speed desktop utilities, cross-platform apps, systems programming, and modern full-stack web applications.
@@ -56,8 +56,8 @@
         <li>💬 <b>Ask me about</b>: C#, Rust, TypeScript, Cross-platform GUI development, and Networking.</li>
       </ul>
     </td>
-    <td width="40%" align="center" valign="middle">
-      <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Coding.gif" width="100%" alt="Coding Animation" />
+    <td width="45%" align="center" valign="middle">
+      <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" alt="Coding Animation" />
     </td>
   </tr>
 </table>
@@ -136,14 +136,14 @@
 
 ---
 
-<!-- GITHUB STREAK STATS -->
-<h3 align="center">🔥 GitHub Streak & Activity</h3>
+<!-- GITHUB STATS & ANALYTICS -->
+<h3 align="center">📊 GitHub Stats & Analytics</h3>
 
-<div align="center">
-  <a href="https://github.com/divyviradiya2">
-    <img src="https://streak-stats.demolab.com?user=divyviradiya2&theme=tokyonight&hide_border=true&card_width=600" alt="GitHub Streak" />
-  </a>
-</div>
+<p align="center">
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=divyviradiya2&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" />
+  &nbsp;&nbsp;
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=divyviradiya2&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</p>
 
 <br />
 
