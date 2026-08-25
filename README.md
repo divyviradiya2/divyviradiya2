@@ -32,16 +32,16 @@
 
 I am a second-year Computer Engineering undergraduate at **LD College of Engineering, Ahmedabad**, living in **Surat, Gujarat**.
 
-Most of my time is spent engineering fast, lightweight software where speed, low memory footprints, and practical utility come first. I love working close to the machine—building native desktop clients, exploring custom networking protocols, and designing robust systems in **C# / .NET** and **Rust**.
+Most of my time is spent engineering fast, lightweight software where speed, low memory footprints, and practical utility come first. I love working close to the machine, building native desktop clients, exploring custom networking protocols, and designing robust systems in **C# / .NET** and **Rust**.
 
 <br />
 
 ### Organizations & Ventures
 
-- **[PocketMC](https://pocketmc.github.io/pocket-mc-website/)** — Founder
+- **[PocketMC](https://pocketmc.github.io/pocket-mc-website/)** (Founder)
   A modern desktop application built to make deploying, configuring, and managing local Minecraft servers intuitive and effortless without terminal mess.
 
-- **[DS Labs](https://ds-labs.vercel.app)** — Founder
+- **[DS Labs](https://ds-labs.vercel.app)** (Founder)
   An independent initiative dedicated to exploring custom software systems, developer utilities, and high-performance experiments.
 
 ---
