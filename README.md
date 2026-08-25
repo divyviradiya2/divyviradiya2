@@ -98,7 +98,7 @@
   <br /><br />
   <!-- Row 2: Rust Engine -->
   <a href="https://github.com/divyviradiya2/photo-fix" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="Photo-Fix" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&description=Lightweight+GUI+utility+to+organize+and+batch+process+photos+in+Rust&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="Photo-Fix" />
   </a>
 </div>
 
@@ -106,10 +106,18 @@
 
 ---
 
-<!-- CONTRIBUTION GRAPH SNAKE ANIMATION -->
-<h3 align="center">Contribution Activity</h3>
+<!-- 3D ISOMETRIC CONTRIBUTION SKYLINE & RETRO SNAKE -->
+<h3 align="center">Contribution Activity & 3D Skyline</h3>
 
 <div align="center">
+  <!-- 3D Isometric Skyline (Night View) -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/divyviradiya2/divyviradiya2/master/profile-3d-contrib/profile-night-view.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/divyviradiya2/divyviradiya2/master/profile-3d-contrib/profile-gitblock.svg">
+    <img alt="3D Contribution Skyline" src="https://raw.githubusercontent.com/divyviradiya2/divyviradiya2/master/profile-3d-contrib/profile-night-view.svg" width="100%" />
+  </picture>
+  <br /><br />
+  <!-- Retro Snake Animation -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/divyviradiya2/divyviradiya2/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/divyviradiya2/divyviradiya2/output/github-contribution-grid-snake.svg">
