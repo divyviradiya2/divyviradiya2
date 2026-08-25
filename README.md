@@ -81,7 +81,7 @@
 
 ---
 
-<!-- SEAMLESS ANIMATED ANALYTICS DASHBOARD -->
+<!-- SEAMLESS ANIMATED ANALYTICS DASHBOARD (SELF-HOSTED VIA GITHUB ACTIONS) -->
 <h3 align="center">Activity & Analytics Dashboard</h3>
 
 <div align="center">
@@ -89,12 +89,12 @@
   <p align="center">
     <img src="./assets/contributions-card.svg" width="48%" alt="Periodic Contributions (Today, Month, Year)" />
     &nbsp;&nbsp;
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=divyviradiya2&theme=github_dark&animation=rise" width="48%" alt="Overall Stats" />
+    <img src="./assets/stats-card.svg" width="48%" alt="Overall Stats" />
   </p>
   
   <!-- Row 2: Language Breakdown Donut -->
   <p align="center">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=divyviradiya2&theme=github_dark&animation=rise" width="48%" alt="Language Breakdown Donut" />
+    <img src="./assets/languages-card.svg" width="48%" alt="Language Breakdown Donut" />
   </p>
 </div>
 
