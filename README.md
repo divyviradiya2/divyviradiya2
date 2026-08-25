@@ -136,15 +136,28 @@
 
 ---
 
-<!-- GITHUB ACTIVITY & ANALYTICS DASHBOARD (RADICAL NEON THEME) -->
-<h3 align="center">📊 GitHub Activity & Analytics</h3>
+<!-- TERMINAL / WINDOW-STYLED ANIMATED ANALYTICS DASHBOARD -->
+<h3 align="center">📊 Activity & Analytics Dashboard</h3>
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=divyviradiya2&theme=radical&name=Divy%20Viradiya" width="97%" alt="Profile Overview & Contribution Wave" />
-  <br /><br />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=divyviradiya2&theme=radical" width="48%" alt="Overall Stats" />
-  &nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=divyviradiya2&theme=radical" width="48%" alt="Language Breakdown Donut" />
+  <table width="100%">
+    <tr>
+      <th align="left" style="background:#1a103c; color:#a9fef7; padding:8px 14px;">
+        🔴&nbsp; 🟡&nbsp; 🟢 &nbsp;&nbsp; <b>divy@analytics-window:~</b>
+      </th>
+    </tr>
+    <tr>
+      <td align="center" style="padding:14px; background:#0d0c18;">
+        <!-- Top Animated Summary Banner -->
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=divyviradiya2&theme=radical&name=Divy%20Viradiya&animation=rise" width="98%" alt="Profile Overview & Contribution Wave" />
+        <br /><br />
+        <!-- Bottom Animated Row -->
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=divyviradiya2&theme=radical&animation=rise" width="48%" alt="Overall Stats" />
+        &nbsp;
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=divyviradiya2&theme=radical&animation=rise" width="48%" alt="Language Breakdown Donut" />
+      </td>
+    </tr>
+  </table>
 </div>
 
 <br />
