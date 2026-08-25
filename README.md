@@ -25,31 +25,24 @@
 <h2 align="center">About Me</h2>
 
 <p align="center">
-  Software engineer and founder specializing in systems programming, high-performance native desktop applications, and network architectures.
+  Founder and systems developer crafting high-speed native desktop software, network tooling, and open-source infrastructure.
 </p>
 
 <br />
 
-### Background & Focus
-Currently in my second year pursuing a Bachelor of Technology in Computer Engineering at **LD College of Engineering (LDCE)**, based in **Surat, Gujarat, India**.
+I am a second-year Computer Engineering undergraduate at **LD College of Engineering, Ahmedabad**, living in **Surat, Gujarat**.
 
-My engineering practice centers around low-level runtime optimization, performance-critical tooling, and scalable system design. I focus on building resilient software with minimal overhead and clean architecture, primarily utilizing **C# / .NET** and **Rust**.
+Most of my time is spent engineering fast, lightweight software where speed, low memory footprints, and practical utility come first. I love working close to the machine—building native desktop clients, exploring custom networking protocols, and designing robust systems in **C# / .NET** and **Rust**.
 
 <br />
 
-### Projects & Ventures
+### Organizations & Ventures
 
-- **[PocketMC](https://pocketmc.github.io/pocket-mc-website/)** (Founder)
-  Cross-platform desktop application and management engine designed to locally host, configure, and orchestrate Minecraft server environments without operational overhead.
+- **[PocketMC](https://pocketmc.github.io/pocket-mc-website/)** — Founder
+  A modern desktop application built to make deploying, configuring, and managing local Minecraft servers intuitive and effortless without terminal mess.
 
-- **[DS Labs](https://ds-labs.vercel.app)** (Founder)
-  Independent software collective focused on researching and developing specialized developer utilities and high-throughput software systems.
-
-- **[EtherTransfer](https://github.com/divyviradiya2/ethertransfer)** (Creator)
-  High-bandwidth point-to-point network file transfer utility engineered in C# for direct peer-to-peer data migration over local Ethernet links.
-
-- **[Photo-Fix](https://github.com/divyviradiya2/photo-fix)** (Creator)
-  Native, memory-efficient GUI image pipeline written in Rust for high-speed chronological organization and batch image operations.
+- **[DS Labs](https://ds-labs.vercel.app)** — Founder
+  An independent initiative dedicated to exploring custom software systems, developer utilities, and high-performance experiments.
 
 ---
 
