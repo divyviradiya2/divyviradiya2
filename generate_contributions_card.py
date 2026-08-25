@@ -3,19 +3,18 @@ import urllib.request
 import json
 from datetime import datetime, timezone
 
-# Exact GitHub Dark Theme Specs matching github-profile-summary-cards
-WIDTH = 450
+WIDTH = 350
 HEIGHT = 200
 BG_COLOR = "#0d1117"
 BORDER_COLOR = "#30363d"
-TITLE_COLOR = "#58a6ff"  # or #10b981 / #34d399
+TITLE_COLOR = "#58a6ff"
 LABEL_COLOR = "#8b949e"
 VALUE_COLOR = "#e6edf3"
 ACCENT_GREEN = "#10b981"
 
 now = datetime.now(timezone.utc)
 today_str = now.strftime('%Y-%m-%d')
-month_name = now.strftime('%B')
+month_name = now.strftime('%b')
 this_month_str = now.strftime('%Y-%m')
 this_year_str = now.strftime('%Y')
 
@@ -24,7 +23,6 @@ month_count = 361
 year_count = 1229
 total_count = 1229
 
-# Fetch live data if possible
 try:
     url = 'https://github-contributions-api.jogruber.de/v4/divyviradiya2?y=all'
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -37,7 +35,7 @@ try:
             year_count = sum(c['count'] for c in contributions if c['date'].startswith(this_year_str))
             total_count = sum(c['count'] for c in contributions)
 except Exception as e:
-    print('Using cached/fallback values:', e)
+    print('Using fallback values:', e)
 
 svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="100%" height="{HEIGHT}">
   <defs>
@@ -56,24 +54,24 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {
     .title {{
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       font-weight: 600;
-      font-size: 17px;
+      font-size: 16px;
       fill: {TITLE_COLOR};
     }}
     .label {{
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-size: 13.5px;
+      font-size: 12.5px;
       fill: {LABEL_COLOR};
     }}
     .value {{
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 13px;
       fill: {VALUE_COLOR};
     }}
     .highlight-val {{
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       font-weight: 800;
-      font-size: 15px;
+      font-size: 13.5px;
       fill: {ACCENT_GREEN};
     }}
     .icon {{ fill: {LABEL_COLOR}; }}
@@ -84,53 +82,49 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {
   <rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{HEIGHT - 1}" rx="6" fill="url(#cardBg)" stroke="{BORDER_COLOR}" stroke-width="1"/>
 
   <!-- Title: Periodic Contributions -->
-  <text x="25" y="36" class="title">Periodic Contributions</text>
+  <text x="20" y="34" class="title">Periodic Contributions</text>
 
   <!-- Metric Rows -->
-  <g transform="translate(25, 70)">
+  <g transform="translate(20, 68)">
     <!-- 1. Today's Contributions -->
     <g transform="translate(0, 0)">
-      <!-- Lightning / Pulse Icon -->
       <path class="icon-green" d="M8.75 0a.75.75 0 0 1 .71.507l1.75 5.25a.75.75 0 0 1-.71.993H7.5v4.5a.75.75 0 0 1-1.37.42l-4.5-6a.75.75 0 0 1 .6-.17H5.25V.75A.75.75 0 0 1 6 0h2.75Z"/>
-      <text x="24" y="11" class="label">Today's Contributions:</text>
-      <text x="235" y="11" class="highlight-val">{today_count}</text>
+      <text x="22" y="10" class="label">Today's Activity:</text>
+      <text x="175" y="10" class="highlight-val">{today_count}</text>
     </g>
 
     <!-- 2. This Month's Contributions -->
-    <g transform="translate(0, 32)">
-      <!-- Calendar Icon -->
+    <g transform="translate(0, 31)">
       <path class="icon" d="M4.75 0a.75.75 0 0 1 .75.75V2h4.5V.75a.75.75 0 0 1 1.5 0V2h1.75C14.216 2 15 2.784 15 3.75v9.5A1.75 1.75 0 0 1 13.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-9.5C0 2.784.784 2 1.75 2H3.5V.75A.75.75 0 0 1 4.75 0ZM1.5 6.5v6.75c0 .138.112.25.25.25h11.5a.25.25 0 0 0 .25-.25V6.5h-12Zm11.75-3H1.75a.25.25 0 0 0-.25.25V5h12v-1.25a.25.25 0 0 0-.25-.25Z"/>
-      <text x="24" y="11" class="label">This Month ({month_name}):</text>
-      <text x="235" y="11" class="value">{month_count}</text>
+      <text x="22" y="10" class="label">This Month ({month_name}):</text>
+      <text x="175" y="10" class="value">{month_count}</text>
     </g>
 
     <!-- 3. This Year's Contributions -->
-    <g transform="translate(0, 64)">
-      <!-- Trophy / Year Icon -->
+    <g transform="translate(0, 62)">
       <path class="icon" d="M3.75 2h7.5a.75.75 0 0 1 .75.75V4h1.75A2.25 2.25 0 0 1 16 6.25v.5a3.25 3.25 0 0 1-3.25 3.25H11.5a4.25 4.25 0 0 1-3.25 4.14v1.61h2a.75.75 0 0 1 0 1.5H4.75a.75.75 0 0 1 0-1.5h2V14.14A4.25 4.25 0 0 1 3.5 10H2.25A3.25 3.25 0 0 1-1 6.75v-.5A2.25 2.25 0 0 1 1.25 4H3V2.75A.75.75 0 0 1 3.75 2ZM3 5.5H1.75a.75.75 0 0 0-.75.75v.5c0 .966.784 1.75 1.75 1.75H3V5.5Zm9 3h.25c.966 0 1.75-.784 1.75-1.75v-.5a.75.75 0 0 0-.75-.75H12v3Z"/>
-      <text x="24" y="11" class="label">This Year ({this_year_str}):</text>
-      <text x="235" y="11" class="value">{year_count:,}</text>
+      <text x="22" y="10" class="label">This Year ({this_year_str}):</text>
+      <text x="175" y="10" class="value">{year_count:,}</text>
     </g>
 
     <!-- 4. Lifetime Contributions -->
-    <g transform="translate(0, 96)">
-      <!-- Commit / Git Icon -->
+    <g transform="translate(0, 93)">
       <path class="icon" d="M10.5 7.75a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm1.43.75a4.002 4.002 0 0 0-7.86 0H.75a.75.75 0 1 0 0 1.5h3.32a4.002 4.002 0 0 0 7.86 0h3.32a.75.75 0 1 0 0-1.5h-3.32Z"/>
-      <text x="24" y="11" class="label">Total Contributions:</text>
-      <text x="235" y="11" class="value">{total_count:,}</text>
+      <text x="22" y="10" class="label">Total Activity:</text>
+      <text x="175" y="10" class="value">{total_count:,}</text>
     </g>
   </g>
 
-  <!-- Right Side Visual Accent: Modern Contribution Progress Radar / Badge -->
-  <g transform="translate(350, 98)">
-    <circle cx="20" cy="15" r="42" fill="none" stroke="#21262d" stroke-width="6"/>
-    <circle cx="20" cy="15" r="42" fill="none" stroke="url(#greenBar)" stroke-width="6" stroke-dasharray="264" stroke-dashoffset="65" stroke-linecap="round" transform="rotate(-90 20 15)"/>
-    <text x="20" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="14" font-weight="bold" fill="{ACCENT_GREEN}" text-anchor="middle">ACTIVE</text>
-    <text x="20" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="10" fill="{LABEL_COLOR}" text-anchor="middle">2026</text>
+  <!-- Right Side Visual Accent -->
+  <g transform="translate(282, 100)">
+    <circle cx="15" cy="15" r="34" fill="none" stroke="#21262d" stroke-width="5"/>
+    <circle cx="15" cy="15" r="34" fill="none" stroke="url(#greenBar)" stroke-width="5" stroke-dasharray="213" stroke-dashoffset="50" stroke-linecap="round" transform="rotate(-90 15 15)"/>
+    <text x="15" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="11" font-weight="bold" fill="{ACCENT_GREEN}" text-anchor="middle">ACTIVE</text>
+    <text x="15" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="9" fill="{LABEL_COLOR}" text-anchor="middle">2026</text>
   </g>
 </svg>'''
 
 os.makedirs("assets", exist_ok=True)
 with open("assets/contributions-card.svg", "w", encoding="utf-8") as f:
     f.write(svg_content)
-print(f"Generated assets/contributions-card.svg successfully (Today: {today_count}, Month: {month_count}, Year: {year_count})!")
+print(f"Generated 350x200 exact ratio assets/contributions-card.svg!")

@@ -81,24 +81,23 @@
 
 ---
 
-<!-- SEAMLESS ANIMATED ANALYTICS DASHBOARD (DARK & GREEN ACCENT) -->
+<!-- SEAMLESS ANIMATED ANALYTICS DASHBOARD (PERFECT 2 x 2 GRID) -->
 <h3 align="center">Activity & Analytics Dashboard</h3>
 
 <div align="center">
-  <!-- Top Animated Summary Banner Card in Dark & Green -->
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=divyviradiya2&theme=github_dark&name=Divy%20Viradiya&animation=rise" width="97%" alt="Profile Overview & Contribution Wave" />
+  <!-- Row 1: Profile Details Wave Graph & Overall Stats -->
+  <p align="center">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=divyviradiya2&theme=github_dark&name=Divy%20Viradiya&animation=rise" width="48%" alt="Profile Overview & Contribution Wave" />
+    &nbsp;&nbsp;
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=divyviradiya2&theme=github_dark&animation=rise" width="48%" alt="Overall Stats" />
+  </p>
   
-  <br /><br />
-  
-  <!-- Middle Row: Periodic Contributions (Today / Month / Year) & Overall Stats -->
-  <img src="./assets/contributions-card.svg" width="48%" alt="Periodic Contributions (Today, Month, Year)" />
-  &nbsp;&nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=divyviradiya2&theme=github_dark&animation=rise" width="48%" alt="Overall Stats" />
-  
-  <br /><br />
-  
-  <!-- Bottom Row: Language Breakdown Donut -->
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=divyviradiya2&theme=github_dark&animation=rise" width="48%" alt="Language Breakdown Donut" />
+  <!-- Row 2: Periodic Contributions (Today, Month, Year) & Language Breakdown Donut -->
+  <p align="center">
+    <img src="./assets/contributions-card.svg" width="48%" alt="Periodic Contributions (Today, Month, Year)" />
+    &nbsp;&nbsp;
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=divyviradiya2&theme=github_dark&animation=rise" width="48%" alt="Language Breakdown Donut" />
+  </p>
 </div>
 
 <br />
