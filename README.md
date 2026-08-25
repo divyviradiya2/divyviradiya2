@@ -6,7 +6,7 @@
 <!-- ANIMATED TYPING SUBTITLE (EMERALD GREEN AESTHETIC) -->
 <div align="center">
   <a href="https://github.com/divyviradiya2">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1000&color=10B981&background=0D111700&center=true&vCenter=true&width=650&lines=Building+high-speed+desktop+utilities+%26+tools;Creator+of+EtherTransfer+(70%2B+Stars);Contributor+to+PocketMC+Windows;High-performance+systems+with+Rust%2C+C%23%2F.NET+%26+Go;Passionate+about+clean+code+%26+performance" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1000&color=10B981&background=0D111700&center=true&vCenter=true&width=650&lines=Founder+of+PocketMC;Founder+of+DS+Labs;Building+high-speed+desktop+utilities+%26+tools;Crafting+robust+systems+with+Rust%2C+C%23%2F.NET+%26+Go;Passionate+about+clean+code+%26+performance" alt="Typing SVG" />
   </a>
 </div>
 
@@ -47,12 +47,12 @@
     <td width="55%" valign="top">
       <h3>About Me</h3>
       <p>
-        Hi there! I'm <b>Divy Viradiya</b>, a Software Developer focused on building high-speed desktop utilities, cross-platform applications, systems programming, and modern full-stack architectures.
+        Hi there! I'm <b>Divy Viradiya</b>, a Software Developer and founder focused on building high-speed desktop utilities, cross-platform applications, systems programming, and modern full-stack architectures.
       </p>
       <ul>
-        <li><b>Creator of EtherTransfer</b>: High-speed PC-to-PC file transfer over LAN/Ethernet cable.</li>
-        <li><b>Core Contributor to PocketMC</b>: Desktop management application for Minecraft instances and server operations.</li>
-        <li><b>Creator of Photo-Fix</b>: Blazing-fast batch image processing and enhancement engine built in Rust.</li>
+        <li><b>Founder of PocketMC</b>: Desktop management application for Minecraft instances and server operations.</li>
+        <li><b>Founder of DS Labs</b>: Developing specialized software systems and developer utilities.</li>
+        <li><b>Creator of EtherTransfer &amp; Photo-Fix</b>: High-speed PC-to-PC file transfer &amp; batch image processing engine in Rust.</li>
         <li><b>Ask me about</b>: C#, Rust, TypeScript, Cross-platform GUI development, and Networking.</li>
       </ul>
     </td>
