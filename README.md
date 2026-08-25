@@ -1,216 +1,153 @@
-<!-- HEADER ANIMATION -->
+<!-- HEADER BANNER -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,2,3,4&height=220&section=header&text=Divy%20Viradiya&fontSize=52&fontAlignY=38&desc=Full%20Stack%20Engineer%20%E2%80%A2%20Open%20Source%20Builder%20%E2%80%A2%20Tech%20Enthusiast&descAlignY=58&descAlign=50" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,2,3,4&height=200&section=header&text=Divy%20Viradiya&fontSize=48&fontAlignY=38&desc=Software%20Engineer%20%E2%80%A2%20Open%20Source%20Builder%20%E2%80%A2%20Systems%20Dev&descAlignY=58&descAlign=50" width="100%"/>
 </div>
 
-<!-- TYPING SVG SUBTITLE -->
+<!-- TYPING ANIMATION -->
 <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=61AFEF&center=true&vCenter=true&width=600&lines=Building+scalable+web+%26+cloud+applications;Crafting+clean+code+%26+delightful+UIs;Exploring+Distributed+Systems+%26+AI;Open+source+contributor+%26+lifelong+learner" alt="Typing SVG" />
+  <a href="https://github.com/divyviradiya2">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=61AFEF&center=true&vCenter=true&width=650&lines=Building+high-performance+tools+%26+apps;Creator+of+EtherTransfer+(70%2B+%E2%AD%90);Working+with+Rust%2C+C%23%2F.NET%2C+TypeScript+%26+Go;Open+source+contributor+%26+systems+enthusiast" alt="Typing SVG" />
   </a>
 </div>
 
+<br />
+
+<!-- QUICK STATS & SOCIAL PILLS -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=divyviradiya2&style=flat-square&color=61AFEF&label=PROFILE+VIEWS" alt="Profile Views" />
-  <img src="https://img.shields.io/github/followers/divyviradiya2?label=FOLLOWERS&style=flat-square&color=blueviolet" alt="GitHub Followers" />
-  <img src="https://img.shields.io/github/stars/divyviradiya2?label=STARS+EARNED&style=flat-square&color=orange" alt="GitHub Stars" />
+  <img src="https://komarev.com/ghpvc/?username=divyviradiya2&style=flat-square&color=61afef&label=PROFILE+VIEWS" alt="Profile Views" />
+  <a href="https://github.com/divyviradiya2?tab=followers">
+    <img src="https://img.shields.io/github/followers/divyviradiya2?label=FOLLOWERS&style=flat-square&color=blueviolet" alt="Followers" />
+  </a>
+  <a href="https://github.com/divyviradiya2/ethertransfer">
+    <img src="https://img.shields.io/github/stars/divyviradiya2/ethertransfer?label=ETHERTRANSFER+STARS&style=flat-square&color=f59e0b" alt="Stars" />
+  </a>
 </p>
 
-<!-- SOCIAL & CONNECT BADGES -->
+<!-- CONNECT BADGES -->
 <p align="center">
+  <a href="https://github.com/divyviradiya2" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
   <a href="https://linkedin.com/in/divyviradiya" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://x.com/yourhandle" target="_blank">
-    <img src="https://img.shields.io/badge/X%20(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter" />
-  </a>
-  <a href="https://portfolio-website.com" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-2563EB?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
-  </a>
   <a href="mailto:your.email@example.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="https://discord.com/users/yourid" target="_blank">
-    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
+  <a href="https://x.com/yourhandle" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
   </a>
 </p>
 
 <br />
 
-<!-- ABOUT ME WITH GIF -->
+<!-- ABOUT ME -->
 <table>
   <tr>
-    <td width="60%">
-      <h3>👨‍💻 About Me</h3>
+    <td width="60%" valign="top">
+      <h3>⚡ About Me</h3>
       <p>
-        Hey there! 👋 I'm <b>Divy Viradiya</b>, a passionate Full Stack Developer focused on building high-performance web applications, resilient backend architectures, and developer-first tools.
+        Hi there! I'm <b>Divy Viradiya</b>, a Software Developer with a strong focus on high-speed desktop utilities, cross-platform apps, systems programming, and modern full-stack web applications.
       </p>
       <ul>
-        <li>🌱 Currently exploring <b>Distributed Systems</b>, <b>Cloud-Native Microservices</b> & <b>AI Agents</b>.</li>
-        <li>💡 Passionate about writing scalable, maintainable, and clean code.</li>
-        <li>🛠️ Actively building real-world projects and collaborating on open-source ecosystems.</li>
-        <li>📫 Feel free to reach out for collaborations, discussions, or coffee!</li>
+        <li>🚀 <b>Creator of EtherTransfer</b>: High-speed PC-to-PC file transfer over LAN/Ethernet cable.</li>
+        <li>🦀 <b>Active Explorations</b>: Rust, C# / .NET, Avalonia, Distributed Systems & Cloud.</li>
+        <li>🎯 <b>Interests</b>: Systems optimization, desktop architecture, and sleek developer tooling.</li>
+        <li>💬 <b>Ask me about</b>: C#, Rust, TypeScript, Cross-platform GUI development, and Networking.</li>
       </ul>
     </td>
-    <td width="40%" align="center">
-      <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="100%" alt="Coding Animation" />
+    <td width="40%" align="center" valign="middle">
+      <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Coding.gif" width="100%" alt="Coding Animation" />
     </td>
   </tr>
 </table>
 
 ---
 
-<!-- GITHUB TROPHIES -->
+<!-- SKILLS / TECH STACK ICONS -->
+<h3 align="center">🛠️ Tech Stack & Skills</h3>
+
 <div align="center">
-  <h3>🏆 GitHub Trophies</h3>
-  <img src="https://github-profile-trophy.vercel.app/?username=divyviradiya2&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4" alt="GitHub Trophies" />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=cs,dotnet,rust,ts,js,py,go,cpp,kotlin,dart&perline=10" alt="Languages" />
+    <br /><br />
+    <img src="https://skillicons.dev/icons?i=react,next,tailwind,redux,vite,flutter,electron,figma&perline=8" alt="Frontend & UI" />
+    <br /><br />
+    <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,postgres,mongodb,redis,mysql,prisma&perline=8" alt="Backend & DB" />
+    <br /><br />
+    <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,githubactions,git,linux,postman,vscode&perline=9" alt="DevOps & Tools" />
+  </a>
 </div>
-
-<br />
-
-<!-- TECH STACK BADGES -->
-<h3 align="center">🛠️ Tech Stack & Arsenal</h3>
-
-<p align="center">
-  <b>Languages</b><br>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
-</p>
-
-<p align="center">
-  <b>Frontend & UI</b><br>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  <img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
-</p>
-
-<p align="center">
-  <b>Backend & APIs</b><br>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
-  <img src="https://img.shields.io/badge/REST_API-02569B?style=for-the-badge&logo=fastapi&logoColor=white" />
-</p>
-
-<p align="center">
-  <b>Databases & Cache</b><br>
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
-</p>
-
-<p align="center">
-  <b>Cloud, DevOps & Tools</b><br>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
-</p>
 
 <br />
 
 ---
 
-<!-- GITHUB STATS & STREAK SECTION -->
-<h3 align="center">📊 GitHub Analytics & Streak</h3>
+<!-- FEATURED PROJECTS WITH STYLISH CARDS -->
+<h3 align="center">⭐ Featured Projects</h3>
 
 <div align="center">
-  <table border="0">
+  <table width="100%">
     <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=divyviradiya2&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" height="175" alt="GitHub Stats" />
+      <td width="50%" valign="top">
+        <h3><a href="https://github.com/divyviradiya2/ethertransfer">⚡ EtherTransfer</a></h3>
+        <p>Software to transfer high volumes of folders and files at maximum throughput between two PCs via an Ethernet cable.</p>
+        <p>
+          <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white" />
+          <img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+          <img src="https://img.shields.io/badge/Avalonia-8A2BE2?style=flat-square" />
+          <img src="https://img.shields.io/github/stars/divyviradiya2/ethertransfer?style=flat-square&color=yellow" />
+        </p>
       </td>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=divyviradiya2&layout=compact&theme=tokyonight&hide_border=true" height="175" alt="Top Languages" />
+      <td width="50%" valign="top">
+        <h3><a href="https://github.com/divyviradiya2/photo-fix">🦀 Photo-Fix</a></h3>
+        <p>Blazing-fast image fixing, enhancement, and batch processing utility built with Rust for high reliability.</p>
+        <p>
+          <img src="https://img.shields.io/badge/Rust-DEA584?style=flat-square&logo=rust&logoColor=black" />
+          <img src="https://img.shields.io/badge/Performance-Optimized-00b4d8?style=flat-square" />
+          <img src="https://img.shields.io/github/stars/divyviradiya2/photo-fix?style=flat-square&color=yellow" />
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" valign="top">
+        <h3><a href="https://github.com/divyviradiya2/pocket-mc-desktop">🎮 Pocket MC Desktop</a></h3>
+        <p>Desktop management application for Minecraft server operations and pocket instances.</p>
+        <p>
+          <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white" />
+          <img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+          <img src="https://img.shields.io/badge/Desktop%20App-4B0082?style=flat-square" />
+        </p>
+      </td>
+      <td width="50%" valign="top">
+        <h3><a href="https://github.com/divyviradiya2/DocuVerify">📄 DocuVerify</a> & <a href="https://github.com/divyviradiya2/ecosentinel">🌱 EcoSentinel</a></h3>
+        <p>Mobile applications built for document authentication and real-time environmental monitoring.</p>
+        <p>
+          <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" />
+          <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
+          <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" />
+        </p>
       </td>
     </tr>
   </table>
 </div>
 
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=divyviradiya2&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</div>
-
-<br />
-
-<!-- ACTIVITY GRAPH -->
-<div align="center">
-  <h3>📈 Contribution Activity</h3>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=divyviradiya2&theme=tokyo-night&hide_border=true&area=true" width="95%" alt="Activity Graph" />
-</div>
-
 <br />
 
 ---
 
-<!-- SNAKE CONTRIBUTION GRAPH -->
+<!-- GITHUB STREAK STATS -->
+<h3 align="center">🔥 GitHub Streak & Activity</h3>
+
 <div align="center">
-  <h3>🐍 Contribution Snake Eating Grid</h3>
-  <img src="https://raw.githubusercontent.com/divyviradiya2/divyviradiya2/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />
+  <a href="https://github.com/divyviradiya2">
+    <img src="https://streak-stats.demolab.com?user=divyviradiya2&theme=tokyonight&hide_border=true&card_width=600" alt="GitHub Streak" />
+  </a>
 </div>
 
 <br />
 
----
-
-<!-- FEATURED PROJECTS SHOWCASE -->
-<h3 align="center">🚀 Featured Repositories & Projects</h3>
-
-<table align="center" width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <a href="https://github.com/divyviradiya2">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=divyviradiya2&repo=project-one&theme=tokyonight&hide_border=true" width="100%" />
-      </a>
-    </td>
-    <td width="50%" align="center">
-      <a href="https://github.com/divyviradiya2">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=divyviradiya2&repo=project-two&theme=tokyonight&hide_border=true" width="100%" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <a href="https://github.com/divyviradiya2">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=divyviradiya2&repo=project-three&theme=tokyonight&hide_border=true" width="100%" />
-      </a>
-    </td>
-    <td width="50%" align="center">
-      <a href="https://github.com/divyviradiya2">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=divyviradiya2&repo=project-four&theme=tokyonight&hide_border=true" width="100%" />
-      </a>
-    </td>
-  </tr>
-</table>
-
-<br />
-
-<!-- RANDOM DEV QUOTE / JOKE -->
-<div align="center">
-  <h3>💬 Dev Wisdom</h3>
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote" />
-</div>
-
-<br />
-
-<!-- FOOTER ANIMATION -->
+<!-- FOOTER BANNER -->
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,2,3,4&height=100&section=footer" width="100%"/>
 </div>
