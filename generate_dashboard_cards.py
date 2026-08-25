@@ -8,13 +8,19 @@ from datetime import datetime, timezone
 # -------------------------------------------------------------
 # 1. CONSTANTS & THEME
 # -------------------------------------------------------------
-WIDTH = 350
-HEIGHT = 200
+CARD_WIDTH = 350
+CARD_HEIGHT = 200
+PROJ_WIDTH = 400
+PROJ_HEIGHT = 120
+
 BG_COLOR = "#0d1117"
 BORDER_COLOR = "#30363d"
+PROJ_BORDER = "#10b981"
 TITLE_COLOR = "#58a6ff"
+PROJ_TITLE_COLOR = "#34d399"
 LABEL_COLOR = "#8b949e"
 VALUE_COLOR = "#e6edf3"
+PROJ_TEXT_COLOR = "#c9d1d9"
 ACCENT_GREEN = "#10b981"
 
 ORGS_TO_SCAN = ["PocketMC"]
@@ -76,6 +82,42 @@ periodic = {
 
 languages_data = []
 
+featured_projects = [
+    {
+        "owner": "divyviradiya2",
+        "repo": "ethertransfer",
+        "name": "ethertransfer",
+        "filename": "assets/project-ethertransfer.svg",
+        "desc": "software to transfer large amount of folders and files between two pc via ethernet cable",
+        "stars": 75,
+        "forks": 0,
+        "lang": "C#",
+        "lang_color": "#178600"
+    },
+    {
+        "owner": "PocketMC",
+        "repo": "pocket-mc-windows",
+        "name": "pocket-mc-windows",
+        "filename": "assets/project-pocketmc.svg",
+        "desc": "Windows desktop app to locally host and manage Minecraft Java and Bedrock Edition servers without any mess.",
+        "stars": 28,
+        "forks": 5,
+        "lang": "C#",
+        "lang_color": "#178600"
+    },
+    {
+        "owner": "divyviradiya2",
+        "repo": "photo-fix",
+        "name": "photo-fix",
+        "filename": "assets/project-photofix.svg",
+        "desc": "lightweight gui tool to sort photos in year/month wise folders",
+        "stars": 5,
+        "forks": 0,
+        "lang": "Rust",
+        "lang_color": "#dea584"
+    }
+]
+
 headers = {'User-Agent': 'Mozilla/5.0'}
 github_token = os.environ.get('GITHUB_TOKEN')
 if github_token:
@@ -87,7 +129,24 @@ all_repos = []
 # 2. REAL-TIME DATA FETCHERS
 # -------------------------------------------------------------
 
-# 2.1 Live Repositories (Personal + Orgs)
+# 2.1 Fetch Featured Projects Data
+for proj in featured_projects:
+    try:
+        url = f"https://api.github.com/repos/{proj['owner']}/{proj['repo']}"
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+            proj["stars"] = data.get("stargazers_count", proj["stars"])
+            proj["forks"] = data.get("forks_count", proj["forks"])
+            if data.get("language"):
+                proj["lang"] = data["language"]
+                proj["lang_color"] = get_language_color(proj["lang"])
+            if data.get("description"):
+                proj["desc"] = data["description"]
+    except Exception as e:
+        print(f"Project fetch notice for {proj['repo']}: {e}")
+
+# 2.2 Live Repositories (Personal + Orgs)
 try:
     repos_url = 'https://api.github.com/users/divyviradiya2/repos?per_page=100'
     req = urllib.request.Request(repos_url, headers=headers)
@@ -110,7 +169,7 @@ if all_repos:
     if total_stars:
         stats["stars"] = total_stars
 
-# 2.2 Live PRs Count
+# 2.3 Live PRs Count
 try:
     pr_url = 'https://api.github.com/search/issues?q=type:pr+author:divyviradiya2'
     req_pr = urllib.request.Request(pr_url, headers=headers)
@@ -120,7 +179,7 @@ try:
 except Exception as e:
     print(f"PRs fetch: {e}")
 
-# 2.3 Live Issues Count
+# 2.4 Live Issues Count
 try:
     issue_url = 'https://api.github.com/search/issues?q=type:issue+author:divyviradiya2'
     req_issue = urllib.request.Request(issue_url, headers=headers)
@@ -130,7 +189,7 @@ try:
 except Exception as e:
     print(f"Issues fetch: {e}")
 
-# 2.4 DYNAMIC Language Bytes Across All Repos
+# 2.5 DYNAMIC Language Bytes Across All Repos
 try:
     lang_bytes = {}
     for r in all_repos:
@@ -166,7 +225,7 @@ if not languages_data:
         ("Rust", 2.9, "#dea584")
     ]
 
-# 2.5 Real-Time TODAY Activity from GitHub Events API (Instant 0s Delay)
+# 2.6 Real-Time TODAY Activity from GitHub Events API
 live_today_events = 0
 try:
     events_url = 'https://api.github.com/users/divyviradiya2/events?per_page=100'
@@ -186,7 +245,7 @@ try:
 except Exception as e:
     print(f"Events API fetch: {e}")
 
-# 2.6 Calendar Contributions (Month, Year, Total)
+# 2.7 Calendar Contributions
 try:
     c_url = 'https://github-contributions-api.jogruber.de/v4/divyviradiya2?y=all'
     req_c = urllib.request.Request(c_url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -199,7 +258,6 @@ try:
             year_c = sum(c['count'] for c in contributions if c['date'].startswith(this_year_str))
             all_time_c = sum(c['count'] for c in contributions)
 
-            # Use maximum of real-time events vs calendar
             periodic["today"] = max(live_today_events, cal_today, periodic["today"])
             periodic["month"] = max(month_c, periodic["month"])
             periodic["year"] = f"{max(year_c, 1229):,}"
@@ -213,9 +271,98 @@ except Exception as e:
 os.makedirs("assets", exist_ok=True)
 
 # -------------------------------------------------------------
-# 3. GENERATE CARD 1: STATS CARD (assets/stats-card.svg)
+# 3. GENERATE FEATURED PROJECT CARDS (3 CARDS)
 # -------------------------------------------------------------
-stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="100%" height="{HEIGHT}">
+def format_desc(text, max_chars=48):
+    words = text.split()
+    lines = []
+    curr = []
+    curr_len = 0
+    for w in words:
+        if curr_len + len(w) + 1 > max_chars and len(lines) < 2:
+            lines.append(" ".join(curr))
+            curr = [w]
+            curr_len = len(w)
+        else:
+            curr.append(w)
+            curr_len += len(w) + 1
+    if curr and len(lines) < 2:
+        lines.append(" ".join(curr))
+    return lines
+
+for p in featured_projects:
+    desc_lines = format_desc(p["desc"], max_chars=50)
+    desc_tspan = ""
+    if len(desc_lines) >= 1:
+        desc_tspan += f'<tspan x="18" y="52">{desc_lines[0]}</tspan>'
+    if len(desc_lines) >= 2:
+        desc_tspan += f'<tspan x="18" y="68">{desc_lines[1]}</tspan>'
+
+    fork_svg = ""
+    if p["forks"] > 0:
+        fork_svg = f'''
+      <g transform="translate(95, 0)">
+        <svg x="0" y="0" width="14" height="14" viewBox="0 0 16 16" fill="{ACCENT_GREEN}">
+          <path d="M5 3.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm0 2.122a2.25 2.25 0 1 0-1.5 0v.878A2.25 2.25 0 0 0 5.75 8.5h1.5v2.128a2.251 2.251 0 1 0 1.5 0V8.5h1.5a2.25 2.25 0 0 0 2.25-2.25v-.878a2.25 2.25 0 1 0-1.5 0v.878a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1-.75-.75v-.878Zm3.75 7.378a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm3-8.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"/>
+        </svg>
+        <text x="18" y="11" class="meta-val">{p["forks"]}</text>
+      </g>'''
+
+    proj_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {PROJ_WIDTH} {PROJ_HEIGHT}" width="100%" height="{PROJ_HEIGHT}">
+  <!-- Generated: {timestamp_str} -->
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#090d13"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .proj-title {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 700; font-size: 15px; fill: {PROJ_TITLE_COLOR}; }}
+    .proj-desc {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11.5px; fill: {PROJ_TEXT_COLOR}; }}
+    .meta-val {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11.5px; fill: {VALUE_COLOR}; font-weight: 600; }}
+  </style>
+
+  <rect x="0.5" y="0.5" width="{PROJ_WIDTH - 1}" height="{PROJ_HEIGHT - 1}" rx="6" fill="url(#cardBg)" stroke="{PROJ_BORDER}" stroke-width="1.2"/>
+
+  <!-- Title & Repo Book Icon -->
+  <g transform="translate(18, 16)">
+    <svg x="0" y="2" width="16" height="16" viewBox="0 0 16 16" fill="{ACCENT_GREEN}">
+      <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 0-.75.75v1.25a.75.75 0 0 1-1.28.53L7.47 14.25a.75.75 0 0 0-.53-.22H4.5A2.5 2.5 0 0 1 2 11.5v-9Zm10.5 10V1.5H4.5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h2.44a2.25 2.25 0 0 1 1.59.66l1.47 1.47V13.25a2.25 2.25 0 0 1 2-2.22V11H12.5v1.5ZM4.5 12h7a.75.75 0 0 0 .75-.75V11H4.5a1 1 0 0 0-1 1v-.25c.2.16.45.25.75.25Z"/>
+    </svg>
+    <text x="24" y="14" class="proj-title">{p["name"]}</text>
+  </g>
+
+  <!-- Description -->
+  <text class="proj-desc">
+    {desc_tspan}
+  </text>
+
+  <!-- Metadata Row (Language, Stars, Forks) -->
+  <g transform="translate(18, 92)">
+    <!-- Language -->
+    <circle cx="5" cy="5" r="4.5" fill="{p["lang_color"]}"/>
+    <text x="15" y="9" class="meta-val">{p["lang"]}</text>
+
+    <!-- Stars -->
+    <g transform="translate(50, 0)">
+      <svg x="0" y="0" width="14" height="14" viewBox="0 0 16 16" fill="{ACCENT_GREEN}">
+        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.74a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.695Z"/>
+      </svg>
+      <text x="18" y="11" class="meta-val">{p["stars"]}</text>
+    </g>
+    {fork_svg}
+  </g>
+</svg>'''
+
+    with open(p["filename"], "w", encoding="utf-8") as f:
+        f.write(proj_svg)
+    print(f"Generated {p['filename']}")
+
+# -------------------------------------------------------------
+# 4. GENERATE CARD 1: STATS CARD (assets/stats-card.svg)
+# -------------------------------------------------------------
+stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {CARD_WIDTH} {CARD_HEIGHT}" width="100%" height="{CARD_HEIGHT}">
   <!-- Generated: {timestamp_str} -->
   <defs>
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -230,7 +377,7 @@ stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HE
     .val {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 700; font-size: 13.5px; fill: {VALUE_COLOR}; }}
   </style>
 
-  <rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{HEIGHT - 1}" rx="6" fill="url(#cardBg)" stroke="{BORDER_COLOR}" stroke-width="1"/>
+  <rect x="0.5" y="0.5" width="{CARD_WIDTH - 1}" height="{CARD_HEIGHT - 1}" rx="6" fill="url(#cardBg)" stroke="{BORDER_COLOR}" stroke-width="1"/>
   <text x="25" y="34" class="title">Stats</text>
 
   <g transform="translate(25, 58)">
@@ -297,7 +444,7 @@ with open("assets/stats-card.svg", "w", encoding="utf-8") as f:
     f.write(stats_svg)
 
 # -------------------------------------------------------------
-# 4. GENERATE CARD 2: DYNAMIC LANGUAGES DONUT (assets/languages-card.svg)
+# 5. GENERATE CARD 2: DYNAMIC LANGUAGES DONUT (assets/languages-card.svg)
 # -------------------------------------------------------------
 cx = 265
 cy = 108
@@ -326,7 +473,7 @@ for i, (name, pct, col) in enumerate(languages_data[:5]):
 legend_svg = "\n".join(legend_items)
 donut_svg_circles = "\n    ".join(donut_paths)
 
-languages_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="100%" height="{HEIGHT}">
+languages_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {CARD_WIDTH} {CARD_HEIGHT}" width="100%" height="{CARD_HEIGHT}">
   <!-- Generated: {timestamp_str} -->
   <defs>
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -341,7 +488,7 @@ languages_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH}
     .val {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 600; font-size: 12px; fill: {VALUE_COLOR}; }}
   </style>
 
-  <rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{HEIGHT - 1}" rx="6" fill="url(#cardBg)" stroke="{BORDER_COLOR}" stroke-width="1"/>
+  <rect x="0.5" y="0.5" width="{CARD_WIDTH - 1}" height="{CARD_HEIGHT - 1}" rx="6" fill="url(#cardBg)" stroke="{BORDER_COLOR}" stroke-width="1"/>
   <text x="25" y="34" class="title">Top Languages by Commit</text>
 
   {legend_svg}
@@ -356,9 +503,9 @@ with open("assets/languages-card.svg", "w", encoding="utf-8") as f:
     f.write(languages_svg)
 
 # -------------------------------------------------------------
-# 5. GENERATE CARD 3: PERIODIC CONTRIBUTIONS (assets/contributions-card.svg)
+# 6. GENERATE CARD 3: PERIODIC CONTRIBUTIONS (assets/contributions-card.svg)
 # -------------------------------------------------------------
-contributions_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="100%" height="{HEIGHT}">
+contributions_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {CARD_WIDTH} {CARD_HEIGHT}" width="100%" height="{CARD_HEIGHT}">
   <!-- Generated: {timestamp_str} -->
   <defs>
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -379,7 +526,7 @@ contributions_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WI
     .highlight-val {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; font-size: 14px; fill: {ACCENT_GREEN}; }}
   </style>
 
-  <rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{HEIGHT - 1}" rx="6" fill="url(#cardBg)" stroke="{BORDER_COLOR}" stroke-width="1"/>
+  <rect x="0.5" y="0.5" width="{CARD_WIDTH - 1}" height="{CARD_HEIGHT - 1}" rx="6" fill="url(#cardBg)" stroke="{BORDER_COLOR}" stroke-width="1"/>
   <text x="25" y="34" class="title">Periodic Contributions</text>
 
   <g transform="translate(25, 58)">
@@ -433,4 +580,4 @@ contributions_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WI
 
 with open("assets/contributions-card.svg", "w", encoding="utf-8") as f:
     f.write(contributions_svg)
-print("Updated all 3 cards with real-time live events data!")
+print("All 6 cards (3 Projects + 3 Analytics) generated successfully!")
