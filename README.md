@@ -1,6 +1,6 @@
 <!-- HEADER ANIMATED MATRIX FALLING CODE BANNER -->
 <div align="center">
-  <img src="./assets/matrix-banner.svg" width="100%" alt="Divy Viradiya - Matrix Digital Rain Banner"/>
+  <img src="./assets/matrix-banner.gif" width="100%" alt="Divy Viradiya - Matrix Digital Rain"/>
 </div>
 
 <!-- ANIMATED TYPING SUBTITLE (EMERALD GREEN AESTHETIC) -->
