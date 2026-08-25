@@ -17,7 +17,6 @@ LABEL_COLOR = "#8b949e"
 VALUE_COLOR = "#e6edf3"
 ACCENT_GREEN = "#10b981"
 
-# Official GitHub Linguist Colors for 100+ Languages
 GITHUB_LINGUIST_COLORS = {
     "C#": "#178600",
     "Dart": "#00B4AB",
@@ -42,31 +41,15 @@ GITHUB_LINGUIST_COLORS = {
     "Vue": "#41b883",
     "Svelte": "#ff3e00",
     "Zig": "#ec915c",
-    "Lua": "#000080",
-    "Elixir": "#6e4a7e",
-    "Clojure": "#db5855",
-    "Haskell": "#5e5086",
-    "R": "#198CE7",
-    "Julia": "#a270ba",
-    "Solidity": "#AA6746",
-    "Nim": "#ffc200",
-    "OCaml": "#ef7a08",
-    "F#": "#b845fc",
-    "Docker": "#384d54",
-    "Dockerfile": "#384d54",
-    "GraphQL": "#e10098",
-    "SQL": "#e38c00"
+    "Lua": "#000080"
 }
 
 def get_language_color(lang_name: str) -> str:
-    """Return official GitHub color or generate deterministic vibrant hex color"""
     if lang_name in GITHUB_LINGUIST_COLORS:
         return GITHUB_LINGUIST_COLORS[lang_name]
-    # Generate deterministic color for any unlisted/new language
     h = hashlib.md5(lang_name.encode('utf-8')).hexdigest()
     return f"#{h[:6]}"
 
-# Default Fallback Values
 stats = {
     "stars": 86,
     "commits": "1.2k",
@@ -84,7 +67,6 @@ periodic = {
 
 languages_data = []
 
-# GitHub API Headers (Supports GITHUB_TOKEN in CI/CD)
 headers = {'User-Agent': 'Mozilla/5.0'}
 github_token = os.environ.get('GITHUB_TOKEN')
 if github_token:
@@ -94,7 +76,6 @@ if github_token:
 # 2. DYNAMICALLY FETCH LIVE GITHUB DATA
 # -------------------------------------------------------------
 try:
-    # 2.1 Public Repositories & Star Count
     repos_url = 'https://api.github.com/users/divyviradiya2/repos?per_page=100'
     req = urllib.request.Request(repos_url, headers=headers)
     with urllib.request.urlopen(req, timeout=10) as resp:
@@ -103,21 +84,18 @@ try:
         if total_stars:
             stats["stars"] = total_stars
 
-    # 2.2 PRs Count
     pr_url = 'https://api.github.com/search/issues?q=type:pr+author:divyviradiya2'
     req_pr = urllib.request.Request(pr_url, headers=headers)
     with urllib.request.urlopen(req_pr, timeout=10) as resp:
         prs_data = json.loads(resp.read().decode('utf-8'))
         stats["prs"] = prs_data.get('total_count', stats["prs"])
 
-    # 2.3 Issues Count
     issue_url = 'https://api.github.com/search/issues?q=type:issue+author:divyviradiya2'
     req_issue = urllib.request.Request(issue_url, headers=headers)
     with urllib.request.urlopen(req_issue, timeout=10) as resp:
         issues_data = json.loads(resp.read().decode('utf-8'))
         stats["issues"] = issues_data.get('total_count', stats["issues"])
 
-    # 2.4 DYNAMIC Language Bytes Breakdown Across ALL Repos
     lang_bytes = {}
     for r in repos:
         if not r.get('fork'):
@@ -141,7 +119,6 @@ try:
             col = get_language_color(name)
             languages_data.append((name, pct, col))
 
-    # 2.5 Contributions Calendar (Today, Month, Year)
     now = datetime.now(timezone.utc)
     today_str = now.strftime('%Y-%m-%d')
     this_month_str = now.strftime('%Y-%m')
@@ -164,9 +141,8 @@ try:
             stats["commits"] = f"{total_c / 1000.0:.1f}k" if total_c >= 1000 else str(total_c)
 
 except Exception as e:
-    print(f"Notice: Fetch completed with status: {e}")
+    print(f"Fetch info: {e}")
 
-# Fallback if offline
 if not languages_data:
     languages_data = [
         ("C#", 54.4, "#178600"),
@@ -179,7 +155,7 @@ if not languages_data:
 os.makedirs("assets", exist_ok=True)
 
 # -------------------------------------------------------------
-# 3. GENERATE CARD 1: STATS CARD (assets/stats-card.svg)
+# 3. GENERATE CARD 1: STATS CARD WITH CRISP VECTORS
 # -------------------------------------------------------------
 stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="100%" height="{HEIGHT}">
   <defs>
@@ -193,46 +169,55 @@ stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HE
     .title {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 600; font-size: 17px; fill: {TITLE_COLOR}; }}
     .label {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; fill: {LABEL_COLOR}; }}
     .val {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 700; font-size: 13.5px; fill: {VALUE_COLOR}; }}
-    .icon {{ fill: {LABEL_COLOR}; }}
   </style>
 
   <rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{HEIGHT - 1}" rx="6" fill="url(#cardBg)" stroke="{BORDER_COLOR}" stroke-width="1"/>
   <text x="25" y="34" class="title">Stats</text>
 
-  <g transform="translate(25, 62)">
-    <!-- Total Stars -->
+  <g transform="translate(25, 58)">
+    <!-- 1. Total Stars (Clean Octicon Star) -->
     <g transform="translate(0, 0)">
-      <path class="icon" d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-      <text x="22" y="11" class="label">Total Stars:</text>
-      <text x="145" y="11" class="val">{stats["stars"]}</text>
+      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
+        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.74a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.695Z"/>
+      </svg>
+      <text x="24" y="13" class="label">Total Stars:</text>
+      <text x="145" y="13" class="val">{stats["stars"]}</text>
     </g>
 
-    <!-- Total Commits -->
+    <!-- 2. Total Commits (Clean Octicon Commit) -->
     <g transform="translate(0, 26)">
-      <path class="icon" d="M10.5 7.75a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm1.43.75a4.002 4.002 0 0 0-7.86 0H.75a.75.75 0 1 0 0 1.5h3.32a4.002 4.002 0 0 0 7.86 0h3.32a.75.75 0 1 0 0-1.5h-3.32Z"/>
-      <text x="22" y="11" class="label">Total Commits:</text>
-      <text x="145" y="11" class="val">{stats["commits"]}</text>
+      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
+        <path d="M10.5 7.75a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm1.43.75a4.002 4.002 0 0 0-7.86 0H.75a.75.75 0 1 0 0 1.5h3.32a4.002 4.002 0 0 0 7.86 0h3.32a.75.75 0 1 0 0-1.5h-3.32Z"/>
+      </svg>
+      <text x="24" y="13" class="label">Total Commits:</text>
+      <text x="145" y="13" class="val">{stats["commits"]}</text>
     </g>
 
-    <!-- Total PRs -->
+    <!-- 3. Total PRs (Clean Octicon PR) -->
     <g transform="translate(0, 52)">
-      <path class="icon" d="M7.177 3.073L9.573.677A.25.25 0 0 1 10 .854v4.792a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm-2.25.75a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm11 7.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm-2.25.75a2.25 2.25 0 1 1 3 2.122v.128a.75.75 0 0 1-1.5 0v-.128a2.25 2.25 0 0 1-1.5-2.122Z"/>
-      <text x="22" y="11" class="label">Total PRs:</text>
-      <text x="145" y="11" class="val">{stats["prs"]}</text>
+      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
+        <path d="M7.177 3.073 9.573.677A.25.25 0 0 1 10 .854v4.792a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm-2.25.75a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm11 7.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm-2.25.75a2.25 2.25 0 1 1 3 2.122v.128a.75.75 0 0 1-1.5 0v-.128a2.25 2.25 0 0 1-1.5-2.122Z"/>
+      </svg>
+      <text x="24" y="13" class="label">Total PRs:</text>
+      <text x="145" y="13" class="val">{stats["prs"]}</text>
     </g>
 
-    <!-- Total Issues -->
+    <!-- 4. Total Issues (Clean Octicon Issue) -->
     <g transform="translate(0, 78)">
-      <path class="icon" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"/>
-      <text x="22" y="11" class="label">Total Issues:</text>
-      <text x="145" y="11" class="val">{stats["issues"]}</text>
+      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
+        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"/>
+      </svg>
+      <text x="24" y="13" class="label">Total Issues:</text>
+      <text x="145" y="13" class="val">{stats["issues"]}</text>
     </g>
 
-    <!-- Contributed to -->
+    <!-- 5. Contributed to (Clean Octicon Repo) -->
     <g transform="translate(0, 104)">
-      <path class="icon" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 0-.75.75v1.25a.75.75 0 0 1-1.28.53L7.47 14.25a.75.75 0 0 0-.53-.22H4.5A2.5 2.5 0 0 1 2 11.5v-9Zm10.5 10V1.5H4.5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h2.44a2.25 2.25 0 0 1 1.59.66l1.47 1.47V13.25a2.25 2.25 0 0 1 2-2.22V11H12.5v1.5ZM4.5 12h7a.75.75 0 0 0 .75-.75V11H4.5a1 1 0 0 0-1 1v-.25c.2.16.45.25.75.25Z"/>
-      <text x="22" y="11" class="label">Contributed to:</text>
-      <text x="145" y="11" class="val">{stats["contributed_to"]}</text>
+      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
+        <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 0-.75.75v1.25a.75.75 0 0 1-1.28.53L7.47 14.25a.75.75 0 0 0-.53-.22H4.5A2.5 2.5 0 0 1 2 11.5v-9Zm10.5 10V1.5H4.5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h2.44a2.25 2.25 0 0 1 1.59.66l1.47 1.47V13.25a2.25 2.25 0 0 1 2-2.22V11H12.5v1.5ZM4.5 12h7a.75.75 0 0 0 .75-.75V11H4.5a1 1 0 0 0-1 1v-.25c.2.16.45.25.75.25Z"/>
+      </svg>
+      <text x="24" y="13" class="label">Contributed to:</text>
+      <text x="145" y="13" class="val">{stats["contributed_to"]}</text>
     </g>
   </g>
 
@@ -245,10 +230,9 @@ stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HE
 
 with open("assets/stats-card.svg", "w", encoding="utf-8") as f:
     f.write(stats_svg)
-print("Generated assets/stats-card.svg successfully!")
 
 # -------------------------------------------------------------
-# 4. GENERATE CARD 2: DYNAMIC LANGUAGES DONUT (assets/languages-card.svg)
+# 4. GENERATE CARD 2: DYNAMIC LANGUAGES DONUT
 # -------------------------------------------------------------
 cx = 265
 cy = 108
@@ -294,10 +278,8 @@ languages_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH}
   <rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{HEIGHT - 1}" rx="6" fill="url(#cardBg)" stroke="{BORDER_COLOR}" stroke-width="1"/>
   <text x="25" y="34" class="title">Top Languages by Commit</text>
 
-  <!-- Legend -->
   {legend_svg}
 
-  <!-- Donut Chart -->
   <g>
     <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="#161b22" stroke-width="22"/>
     {donut_svg_circles}
@@ -306,10 +288,9 @@ languages_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH}
 
 with open("assets/languages-card.svg", "w", encoding="utf-8") as f:
     f.write(languages_svg)
-print("Generated assets/languages-card.svg dynamically!")
 
 # -------------------------------------------------------------
-# 5. GENERATE CARD 3: PERIODIC CONTRIBUTIONS (assets/contributions-card.svg)
+# 5. GENERATE CARD 3: PERIODIC CONTRIBUTIONS WITH CRISP VECTORS
 # -------------------------------------------------------------
 now = datetime.now(timezone.utc)
 month_name = now.strftime('%B')
@@ -333,40 +314,46 @@ contributions_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WI
     .label {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; fill: {LABEL_COLOR}; }}
     .val {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 700; font-size: 13.5px; fill: {VALUE_COLOR}; }}
     .highlight-val {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; font-size: 14px; fill: {ACCENT_GREEN}; }}
-    .icon {{ fill: {LABEL_COLOR}; }}
-    .icon-green {{ fill: {ACCENT_GREEN}; }}
   </style>
 
   <rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{HEIGHT - 1}" rx="6" fill="url(#cardBg)" stroke="{BORDER_COLOR}" stroke-width="1"/>
   <text x="25" y="34" class="title">Periodic Contributions</text>
 
-  <g transform="translate(25, 62)">
-    <!-- 1. Today's Activity -->
+  <g transform="translate(25, 58)">
+    <!-- 1. Today's Activity (Clean Zap Vector) -->
     <g transform="translate(0, 0)">
-      <path class="icon-green" d="M8.75 0a.75.75 0 0 1 .71.507l1.75 5.25a.75.75 0 0 1-.71.993H7.5v4.5a.75.75 0 0 1-1.37.42l-4.5-6a.75.75 0 0 1 .6-.17H5.25V.75A.75.75 0 0 1 6 0h2.75Z"/>
-      <text x="22" y="11" class="label">Today's Activity:</text>
-      <text x="160" y="11" class="highlight-val">{periodic["today"]}</text>
+      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{ACCENT_GREEN}">
+        <path d="M9.504.43a.75.75 0 0 1 .496.7v4.12h3.25a.75.75 0 0 1 .593 1.21l-7.25 9a.75.75 0 0 1-1.258-.75l1.62-5.71H3.75a.75.75 0 0 1-.659-1.11l5.5-7a.75.75 0 0 1 .913-.46Z"/>
+      </svg>
+      <text x="24" y="13" class="label">Today's Activity:</text>
+      <text x="160" y="13" class="highlight-val">{periodic["today"]}</text>
     </g>
 
-    <!-- 2. This Month's Activity -->
+    <!-- 2. This Month's Activity (Clean Calendar Vector) -->
     <g transform="translate(0, 28)">
-      <path class="icon" d="M4.75 0a.75.75 0 0 1 .75.75V2h4.5V.75a.75.75 0 0 1 1.5 0V2h1.75C14.216 2 15 2.784 15 3.75v9.5A1.75 1.75 0 0 1 13.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-9.5C0 2.784.784 2 1.75 2H3.5V.75A.75.75 0 0 1 4.75 0ZM1.5 6.5v6.75c0 .138.112.25.25.25h11.5a.25.25 0 0 0 .25-.25V6.5h-12Zm11.75-3H1.75a.25.25 0 0 0-.25.25V5h12v-1.25a.25.25 0 0 0-.25-.25Z"/>
-      <text x="22" y="11" class="label">This Month ({month_name}):</text>
-      <text x="160" y="11" class="val">{periodic["month"]}</text>
+      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
+        <path d="M4.75 0a.75.75 0 0 1 .75.75V2h5V.75a.75.75 0 0 1 1.5 0V2h1.25C14.444 2 16 3.556 16 5.25v7.5C16 14.444 14.444 16 12.75 16H3.25C1.556 16 0 14.444 0 12.75v-7.5C0 3.556 1.556 2 3.25 2H4.5V.75A.75.75 0 0 1 4.75 0ZM1.5 6.5v6.25c0 .966.784 1.75 1.75 1.75h9.5A1.75 1.75 0 0 0 14.5 12.75V6.5Zm13-1.5V5.25a1.75 1.75 0 0 0-1.75-1.75H3.25A1.75 1.75 0 0 0 1.5 5.25V5Z"/>
+      </svg>
+      <text x="24" y="13" class="label">This Month ({month_name}):</text>
+      <text x="160" y="13" class="val">{periodic["month"]}</text>
     </g>
 
-    <!-- 3. This Year's Activity -->
+    <!-- 3. This Year's Activity (Clean Trophy Vector) -->
     <g transform="translate(0, 56)">
-      <path class="icon" d="M3.75 2h7.5a.75.75 0 0 1 .75.75V4h1.75A2.25 2.25 0 0 1 16 6.25v.5a3.25 3.25 0 0 1-3.25 3.25H11.5a4.25 4.25 0 0 1-3.25 4.14v1.61h2a.75.75 0 0 1 0 1.5H4.75a.75.75 0 0 1 0-1.5h2V14.14A4.25 4.25 0 0 1 3.5 10H2.25A3.25 3.25 0 0 1-1 6.75v-.5A2.25 2.25 0 0 1 1.25 4H3V2.75A.75.75 0 0 1 3.75 2ZM3 5.5H1.75a.75.75 0 0 0-.75.75v.5c0 .966.784 1.75 1.75 1.75H3V5.5Zm9 3h.25c.966 0 1.75-.784 1.75-1.75v-.5a.75.75 0 0 0-.75-.75H12v3Z"/>
-      <text x="22" y="11" class="label">This Year ({this_year_str}):</text>
-      <text x="160" y="11" class="val">{periodic["year"]}</text>
+      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
+        <path d="M3.75 2h8.5a.75.75 0 0 1 .75.75V4h1.75A1.25 1.25 0 0 1 16 5.25v.5A2.25 2.25 0 0 1 13.75 8H12a4 4 0 0 1-3.25 3.93v1.57h2a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1 0-1.5h2v-1.57A4 4 0 0 1 4 8H2.25A2.25 2.25 0 0 1 0 5.75v-.5A1.25 1.25 0 0 1 1.25 4H3V2.75A.75.75 0 0 1 3.75 2ZM3 5.5H1.5v.25c0 .414.336.75.75.75H3ZM13 6.5h.75a.75.75 0 0 0 .75-.75V5.5H13Zm-8.5-2v3.75a3.5 3.5 0 0 0 7 0V4.5Z"/>
+      </svg>
+      <text x="24" y="13" class="label">This Year ({this_year_str}):</text>
+      <text x="160" y="13" class="val">{periodic["year"]}</text>
     </g>
 
-    <!-- 4. Total Lifetime Activity -->
+    <!-- 4. Total Lifetime Activity (Clean Git Commit Vector) -->
     <g transform="translate(0, 84)">
-      <path class="icon" d="M10.5 7.75a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm1.43.75a4.002 4.002 0 0 0-7.86 0H.75a.75.75 0 1 0 0 1.5h3.32a4.002 4.002 0 0 0 7.86 0h3.32a.75.75 0 1 0 0-1.5h-3.32Z"/>
-      <text x="22" y="11" class="label">Total Activity:</text>
-      <text x="160" y="11" class="val">{periodic["total"]}</text>
+      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
+        <path d="M10.5 7.75a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm1.43.75a4.002 4.002 0 0 0-7.86 0H.75a.75.75 0 1 0 0 1.5h3.32a4.002 4.002 0 0 0 7.86 0h3.32a.75.75 0 1 0 0-1.5h-3.32Z"/>
+      </svg>
+      <text x="24" y="13" class="label">Total Activity:</text>
+      <text x="160" y="13" class="val">{periodic["total"]}</text>
     </g>
   </g>
 
@@ -381,4 +368,4 @@ contributions_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WI
 
 with open("assets/contributions-card.svg", "w", encoding="utf-8") as f:
     f.write(contributions_svg)
-print("Generated assets/contributions-card.svg successfully!")
+print("Updated all SVG cards with crisp, perfect vector icons!")
