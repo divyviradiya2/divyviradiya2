@@ -21,13 +21,12 @@
 
 <br />
 
-### ⚡ About Me
+<!-- ABOUT ME -->
+<h3 align="center">About Me</h3>
 
-- 📍 Based in **Surat, Gujarat** • 2nd Year Computer Engineering @ **LDCE**
-- 🛠️ Building fast native desktop applications, systems tooling, and networking software in **C# / .NET** and **Rust**
-- 🚀 Founder @ **[PocketMC](https://pocketmc.github.io/pocket-mc-website/)** — Local server & instance manager for Minecraft
-- 🔬 Founder @ **[DS Labs](https://ds-labs.vercel.app)** — Experimental software & developer utilities
-- 📦 Creator of **[EtherTransfer](https://github.com/divyviradiya2/ethertransfer)** (High-speed LAN file transfer) & **[Photo-Fix](https://github.com/divyviradiya2/photo-fix)** (Batch photo organizer)
+<div align="center">
+  <img src="./assets/about-card.svg" width="100%" alt="About Divy Viradiya" />
+</div>
 
 ---
 
