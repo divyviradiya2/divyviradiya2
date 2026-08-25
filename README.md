@@ -6,7 +6,7 @@
 <!-- ANIMATED TYPING SUBTITLE (EMERALD GREEN AESTHETIC) -->
 <div align="center">
   <a href="https://github.com/divyviradiya2">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1000&color=10B981&background=0D111700&center=true&vCenter=true&width=650&lines=Building+high-speed+desktop+utilities+%26+tools;Creator+of+EtherTransfer+(70%2B+Stars);Crafting+robust+systems+with+Rust%2C+C%23%2F.NET+%26+Go;Passionate+about+clean+code+%26+performance" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1000&color=10B981&background=0D111700&center=true&vCenter=true&width=650&lines=Building+high-speed+desktop+utilities+%26+tools;Creator+of+EtherTransfer+(70%2B+Stars);Contributor+to+PocketMC+Windows;High-performance+systems+with+Rust%2C+C%23%2F.NET+%26+Go;Passionate+about+clean+code+%26+performance" alt="Typing SVG" />
   </a>
 </div>
 
@@ -51,8 +51,8 @@
       </p>
       <ul>
         <li><b>Creator of EtherTransfer</b>: High-speed PC-to-PC file transfer over LAN/Ethernet cable.</li>
-        <li><b>Active Explorations</b>: Rust, C# / .NET, Avalonia, Distributed Systems & Cloud.</li>
-        <li><b>Interests</b>: Systems optimization, desktop architecture, and sleek developer tooling.</li>
+        <li><b>Core Contributor to PocketMC</b>: Desktop management application for Minecraft instances and server operations.</li>
+        <li><b>Creator of Photo-Fix</b>: Blazing-fast batch image processing and enhancement engine built in Rust.</li>
         <li><b>Ask me about</b>: C#, Rust, TypeScript, Cross-platform GUI development, and Networking.</li>
       </ul>
     </td>
@@ -83,24 +83,22 @@
 
 ---
 
-<!-- FEATURED PROJECTS SHOWCASE (DYNAMIC CARDS IN DARK & GREEN THEME) -->
-<h3 align="center">Featured Projects</h3>
+<!-- MAIN FEATURED PROJECTS (DYNAMIC LIVE CARDS IN DARK & GREEN THEME) -->
+<h3 align="center">Main Projects</h3>
 
 <div align="center">
+  <!-- Row 1: Primary Flagship Projects -->
   <a href="https://github.com/divyviradiya2/ethertransfer" target="_blank">
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=ethertransfer&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="EtherTransfer" />
   </a>
   &nbsp;
-  <a href="https://github.com/divyviradiya2/photo-fix" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="Photo-Fix" />
+  <a href="https://github.com/PocketMC/pocket-mc-windows" target="_blank">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=PocketMC&repo=pocket-mc-windows&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=true" width="48%" alt="PocketMC Windows" />
   </a>
   <br /><br />
-  <a href="https://github.com/divyviradiya2/pocket-mc-desktop" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=pocket-mc-desktop&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="Pocket MC Desktop" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/divyviradiya2/DocuVerify" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=DocuVerify&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="DocuVerify" />
+  <!-- Row 2: Rust High Performance Tool -->
+  <a href="https://github.com/divyviradiya2/photo-fix" target="_blank">
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&description=High-performance+batch+image+fixing+and+optimization+engine+built+with+Rust&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="Photo-Fix" />
   </a>
 </div>
 
