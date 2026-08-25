@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="200">
-  <!-- Generated: 2026-08-25 12:52 UTC -->
+  <!-- Generated: 2026-08-25 12:57 UTC -->
   <defs>
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -20,39 +20,39 @@
     <g transform="translate(25, 65)">
       <rect width="13" height="13" rx="2" fill="#178600"/>
       <text x="22" y="11" class="label">C#</text>
-      <text x="135" y="11" class="val">78.1%</text>
+      <text x="135" y="11" class="val">83.2%</text>
     </g>
 
     <g transform="translate(25, 89)">
-      <rect width="13" height="13" rx="2" fill="#e34c26"/>
-      <text x="22" y="11" class="label">HTML</text>
-      <text x="135" y="11" class="val">6.1%</text>
+      <rect width="13" height="13" rx="2" fill="#00B4AB"/>
+      <text x="22" y="11" class="label">Dart</text>
+      <text x="135" y="11" class="val">5.1%</text>
     </g>
 
     <g transform="translate(25, 113)">
-      <rect width="13" height="13" rx="2" fill="#00B4AB"/>
-      <text x="22" y="11" class="label">Dart</text>
-      <text x="135" y="11" class="val">4.1%</text>
+      <rect width="13" height="13" rx="2" fill="#e34c26"/>
+      <text x="22" y="11" class="label">HTML</text>
+      <text x="135" y="11" class="val">3.0%</text>
     </g>
 
     <g transform="translate(25, 137)">
-      <rect width="13" height="13" rx="2" fill="#3178c6"/>
-      <text x="22" y="11" class="label">TypeScript</text>
-      <text x="135" y="11" class="val">2.7%</text>
+      <rect width="13" height="13" rx="2" fill="#A97BFF"/>
+      <text x="22" y="11" class="label">Kotlin</text>
+      <text x="135" y="11" class="val">2.3%</text>
     </g>
 
     <g transform="translate(25, 161)">
-      <rect width="13" height="13" rx="2" fill="#f1e05a"/>
-      <text x="22" y="11" class="label">JavaScript</text>
-      <text x="135" y="11" class="val">2.7%</text>
+      <rect width="13" height="13" rx="2" fill="#563d7c"/>
+      <text x="22" y="11" class="label">CSS</text>
+      <text x="135" y="11" class="val">1.9%</text>
     </g>
 
   <g>
     <circle cx="265" cy="108" r="45" fill="none" stroke="#161b22" stroke-width="22"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#178600" stroke-width="22" stroke-dasharray="220.81 61.93" stroke-dashoffset="-0.00" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#e34c26" stroke-width="22" stroke-dasharray="17.21 265.53" stroke-dashoffset="-220.81" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#00B4AB" stroke-width="22" stroke-dasharray="11.53 271.21" stroke-dashoffset="-238.02" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#3178c6" stroke-width="22" stroke-dasharray="7.68 275.06" stroke-dashoffset="-249.55" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#f1e05a" stroke-width="22" stroke-dasharray="7.68 275.07" stroke-dashoffset="-257.23" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#178600" stroke-width="22" stroke-dasharray="235.20 47.55" stroke-dashoffset="-0.00" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#00B4AB" stroke-width="22" stroke-dasharray="14.36 268.39" stroke-dashoffset="-235.20" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#e34c26" stroke-width="22" stroke-dasharray="8.50 274.24" stroke-dashoffset="-249.55" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#A97BFF" stroke-width="22" stroke-dasharray="6.38 276.36" stroke-dashoffset="-258.05" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#563d7c" stroke-width="22" stroke-dasharray="5.43 277.31" stroke-dashoffset="-264.44" transform="rotate(-90 265 108)"/>
   </g>
 </svg>
