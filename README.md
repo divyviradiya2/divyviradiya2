@@ -22,17 +22,34 @@
 <br />
 
 <!-- ABOUT ME -->
-<h3 align="center">About Me</h3>
+<h2 align="center">About Me</h2>
 
-Hey! I'm **Divy Viradiya** — a 2nd-year Computer Engineering student at **LD College of Engineering (LDCE)**, living in **Surat, Gujarat**.
+<p align="center">
+  Software engineer and founder specializing in systems programming, high-performance native desktop applications, and network architectures.
+</p>
 
-I build software out of pure passion for speed, low overhead, and practical utility. I enjoy working close to the system, building native desktop applications, hacking on networking protocols, and engineering high-throughput tools in **C# / .NET** and **Rust**.
+<br />
 
-- 🚀 **Founder @ [PocketMC](https://pocketmc.github.io/pocket-mc-website/)** — Desktop management & server orchestration tool for Minecraft.
-- 🔬 **Founder @ [DS Labs](https://ds-labs.vercel.app)** — Experimental software systems, developer utilities, and tools.
-- ⚡ **Creator of [EtherTransfer](https://github.com/divyviradiya2/ethertransfer)** — High-speed PC-to-PC LAN file transfer over direct Ethernet.
-- 🖼️ **Creator of [Photo-Fix](https://github.com/divyviradiya2/photo-fix)** — Lightweight GUI photo sorting and processing engine written in Rust.
-- 🛠️ **Core Focus**: Systems programming, desktop architecture, networking protocols, and low-level performance optimization.
+### Background & Focus
+Currently in my second year pursuing a Bachelor of Technology in Computer Engineering at **LD College of Engineering (LDCE)**, based in **Surat, Gujarat, India**.
+
+My engineering practice centers around low-level runtime optimization, performance-critical tooling, and scalable system design. I focus on building resilient software with minimal overhead and clean architecture, primarily utilizing **C# / .NET** and **Rust**.
+
+<br />
+
+### Projects & Ventures
+
+- **[PocketMC](https://pocketmc.github.io/pocket-mc-website/)** (Founder)
+  Cross-platform desktop application and management engine designed to locally host, configure, and orchestrate Minecraft server environments without operational overhead.
+
+- **[DS Labs](https://ds-labs.vercel.app)** (Founder)
+  Independent software collective focused on researching and developing specialized developer utilities and high-throughput software systems.
+
+- **[EtherTransfer](https://github.com/divyviradiya2/ethertransfer)** (Creator)
+  High-bandwidth point-to-point network file transfer utility engineered in C# for direct peer-to-peer data migration over local Ethernet links.
+
+- **[Photo-Fix](https://github.com/divyviradiya2/photo-fix)** (Creator)
+  Native, memory-efficient GUI image pipeline written in Rust for high-speed chronological organization and batch image operations.
 
 ---
 
