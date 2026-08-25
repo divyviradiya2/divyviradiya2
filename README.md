@@ -53,11 +53,11 @@ Alongside low-level systems, I build responsive, production-ready web applicatio
 
 <div align="center">
   <p><b>Core Languages</b></p>
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,rust,cpp,go,py,ts,js,html,css&perline=10" alt="Core Languages" />
+  <img src="https://skillicons.dev/icons?i=cs,rust,cpp,go,py,ts,js,html,css&perline=10" alt="Core Languages" />
   <br /><br />
 
-  <p><b>Desktop GUI & Native Frameworks</b></p>
-  <img src="https://skillicons.dev/icons?i=tauri,qt,gtk,electron,flutter&perline=8" alt="Desktop GUI" />
+  <p><b>Desktop Software Frameworks</b></p>
+  <img src="https://skillicons.dev/icons?i=dotnet,tauri,qt,gtk,electron,flutter&perline=8" alt="Desktop Software Frameworks" />
   <br />
   <p>
     <img src="https://img.shields.io/badge/WPF-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="WPF" />
