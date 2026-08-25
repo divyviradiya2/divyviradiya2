@@ -87,9 +87,17 @@
 <div align="center">
   <!-- Top Animated Summary Banner Card in Dark & Green -->
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=divyviradiya2&theme=github_dark&name=Divy%20Viradiya&animation=rise" width="97%" alt="Profile Overview & Contribution Wave" />
+  
   <br /><br />
-  <!-- Bottom Animated Row -->
+  
+  <!-- Middle Row: Periodic Contributions (Today / Month / Year) & Overall Stats -->
+  <img src="./assets/contributions-card.svg" width="48%" alt="Periodic Contributions (Today, Month, Year)" />
+  &nbsp;&nbsp;
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=divyviradiya2&theme=github_dark&animation=rise" width="48%" alt="Overall Stats" />
+  
+  <br /><br />
+  
+  <!-- Bottom Row: Language Breakdown Donut -->
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=divyviradiya2&theme=github_dark&animation=rise" width="48%" alt="Language Breakdown Donut" />
 </div>
 
