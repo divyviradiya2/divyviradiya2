@@ -10,18 +10,7 @@
   </a>
 </div>
 
-<br />
 
-<!-- QUICK STATS & LIVE COUNTERS (DARK & GREEN ACCENT) -->
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=divyviradiya2&style=flat-square&color=10b981&label=PROFILE+VIEWS" alt="Profile Views" />
-  <a href="https://github.com/divyviradiya2?tab=followers">
-    <img src="https://img.shields.io/github/followers/divyviradiya2?label=FOLLOWERS&style=flat-square&color=238636&labelColor=0d1117" alt="Followers" />
-  </a>
-  <a href="https://github.com/divyviradiya2/ethertransfer">
-    <img src="https://img.shields.io/github/stars/divyviradiya2/ethertransfer?label=ETHERTRANSFER+STARS&style=flat-square&color=10b981&labelColor=0d1117" alt="Stars" />
-  </a>
-</p>
 
 <!-- SOCIAL BADGES -->
 <p align="center">
@@ -89,16 +78,16 @@
 <div align="center">
   <!-- Row 1: Primary Flagship Systems -->
   <a href="https://github.com/divyviradiya2/ethertransfer" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=ethertransfer&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="EtherTransfer" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=ethertransfer&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false&cache_seconds=1800" width="48%" alt="EtherTransfer" />
   </a>
   &nbsp;
   <a href="https://github.com/PocketMC/pocket-mc-windows" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=PocketMC&repo=pocket-mc-windows&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="PocketMC Windows" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=PocketMC&repo=pocket-mc-windows&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false&cache_seconds=1800" width="48%" alt="PocketMC Windows" />
   </a>
   <br /><br />
   <!-- Row 2: Rust Engine -->
   <a href="https://github.com/divyviradiya2/photo-fix" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&description=Lightweight+GUI+utility+to+organize+and+batch+process+photos+in+Rust&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="Photo-Fix" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&description=Lightweight+GUI+utility+to+organize+and+batch+process+photos+in+Rust&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false&cache_seconds=1800" width="48%" alt="Photo-Fix" />
   </a>
 </div>
 
