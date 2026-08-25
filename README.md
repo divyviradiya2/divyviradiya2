@@ -52,12 +52,23 @@ Alongside low-level systems, I build responsive, production-ready web applicatio
 <h2 align="center">Tech Stack & Tools</h2>
 
 <div align="center">
-  <p><b>Systems & Native Desktop</b></p>
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,rust,cpp,go,electron,python&perline=8" alt="Systems & Native Desktop" />
+  <p><b>Systems & Core Languages</b></p>
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,rust,cpp,go,py&perline=8" alt="Systems & Core Languages" />
   <br /><br />
 
+  <p><b>Desktop GUI & Native Frameworks</b></p>
+  <img src="https://skillicons.dev/icons?i=tauri,qt,gtk,electron,flutter&perline=8" alt="Desktop GUI" />
+  <br />
+  <p>
+    <img src="https://img.shields.io/badge/WPF-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="WPF" />
+    <img src="https://img.shields.io/badge/WinUI_3-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="WinUI 3" />
+    <img src="https://img.shields.io/badge/Avalonia_UI-8C37BA?style=for-the-badge&logo=csharp&logoColor=white" alt="Avalonia UI" />
+    <img src="https://img.shields.io/badge/FLTK-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="FLTK" />
+  </p>
+  <br />
+
   <p><b>Full-Stack Web & Frontend</b></p>
-  <img src="https://skillicons.dev/icons?i=ts,js,react,next,tailwind,vite,redux,flutter,html,css&perline=10" alt="Full-Stack Web & Frontend" />
+  <img src="https://skillicons.dev/icons?i=ts,js,react,next,tailwind,vite,redux,html,css&perline=10" alt="Full-Stack Web & Frontend" />
   <br /><br />
 
   <p><b>Backend & Databases</b></p>
