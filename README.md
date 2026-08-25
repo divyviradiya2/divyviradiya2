@@ -57,12 +57,15 @@ Alongside low-level systems, I build responsive, production-ready web applicatio
   <br /><br />
 
   <p><b>Desktop Software Frameworks</b></p>
-  <img src="https://skillicons.dev/icons?i=dotnet,tauri,qt,gtk,electron,flutter&perline=8" alt="Desktop Software Frameworks" />
-  <br />
   <p>
     <img src="https://img.shields.io/badge/WPF-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="WPF" />
     <img src="https://img.shields.io/badge/WinUI_3-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="WinUI 3" />
     <img src="https://img.shields.io/badge/Avalonia_UI-8C37BA?style=for-the-badge&logo=csharp&logoColor=white" alt="Avalonia UI" />
+    <img src="https://img.shields.io/badge/Tauri-FFC131?style=for-the-badge&logo=tauri&logoColor=black" alt="Tauri" />
+    <br />
+    <img src="https://img.shields.io/badge/Qt-41CD52?style=for-the-badge&logo=qt&logoColor=white" alt="Qt" />
+    <img src="https://img.shields.io/badge/GTK-4A90E2?style=for-the-badge&logo=gnome&logoColor=white" alt="GTK" />
+    <img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" alt="Electron" />
     <img src="https://img.shields.io/badge/FLTK-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="FLTK" />
   </p>
   <br />
