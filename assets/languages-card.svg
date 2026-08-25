@@ -48,10 +48,10 @@
 
   <g>
     <circle cx="265" cy="108" r="45" fill="none" stroke="#161b22" stroke-width="22"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#178600" stroke-width="22" stroke-dasharray="220.87 61.87" stroke-dashoffset="-0.00" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#e34c26" stroke-width="22" stroke-dasharray="17.21 265.53" stroke-dashoffset="-220.87" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#00B4AB" stroke-width="22" stroke-dasharray="11.53 271.21" stroke-dashoffset="-238.08" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#3178c6" stroke-width="22" stroke-dasharray="7.68 275.06" stroke-dashoffset="-249.62" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#f1e05a" stroke-width="22" stroke-dasharray="7.68 275.07" stroke-dashoffset="-257.30" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#178600" stroke-width="22" stroke-dasharray="220.81 61.93" stroke-dashoffset="-0.00" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#e34c26" stroke-width="22" stroke-dasharray="17.21 265.53" stroke-dashoffset="-220.81" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#00B4AB" stroke-width="22" stroke-dasharray="11.53 271.21" stroke-dashoffset="-238.02" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#3178c6" stroke-width="22" stroke-dasharray="7.68 275.06" stroke-dashoffset="-249.55" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#f1e05a" stroke-width="22" stroke-dasharray="7.68 275.07" stroke-dashoffset="-257.23" transform="rotate(-90 265 108)"/>
   </g>
 </svg>
