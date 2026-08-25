@@ -24,9 +24,15 @@
 <!-- ABOUT ME -->
 <h3 align="center">About Me</h3>
 
-<div align="center">
-  <img src="./assets/about-card.svg" width="100%" alt="About Divy Viradiya" />
-</div>
+Hey! I'm **Divy Viradiya** — a 2nd-year Computer Engineering student at **LD College of Engineering (LDCE)**, living in **Surat, Gujarat**.
+
+I build software out of pure passion for speed, low overhead, and practical utility. I enjoy working close to the system, building native desktop applications, hacking on networking protocols, and engineering high-throughput tools in **C# / .NET** and **Rust**.
+
+- 🚀 **Founder @ [PocketMC](https://pocketmc.github.io/pocket-mc-website/)** — Desktop management & server orchestration tool for Minecraft.
+- 🔬 **Founder @ [DS Labs](https://ds-labs.vercel.app)** — Experimental software systems, developer utilities, and tools.
+- ⚡ **Creator of [EtherTransfer](https://github.com/divyviradiya2/ethertransfer)** — High-speed PC-to-PC LAN file transfer over direct Ethernet.
+- 🖼️ **Creator of [Photo-Fix](https://github.com/divyviradiya2/photo-fix)** — Lightweight GUI photo sorting and processing engine written in Rust.
+- 🛠️ **Core Focus**: Systems programming, desktop architecture, networking protocols, and low-level performance optimization.
 
 ---
 
