@@ -19,39 +19,39 @@
     <g transform="translate(25, 65)">
       <rect width="13" height="13" rx="2" fill="#178600"/>
       <text x="22" y="11" class="label">C#</text>
-      <text x="135" y="11" class="val">54.0%</text>
+      <text x="135" y="11" class="val">78.1%</text>
     </g>
 
     <g transform="translate(25, 89)">
-      <rect width="13" height="13" rx="2" fill="#00B4AB"/>
-      <text x="22" y="11" class="label">Dart</text>
-      <text x="135" y="11" class="val">16.7%</text>
+      <rect width="13" height="13" rx="2" fill="#e34c26"/>
+      <text x="22" y="11" class="label">HTML</text>
+      <text x="135" y="11" class="val">6.1%</text>
     </g>
 
     <g transform="translate(25, 113)">
-      <rect width="13" height="13" rx="2" fill="#e34c26"/>
-      <text x="22" y="11" class="label">HTML</text>
-      <text x="135" y="11" class="val">7.8%</text>
+      <rect width="13" height="13" rx="2" fill="#00B4AB"/>
+      <text x="22" y="11" class="label">Dart</text>
+      <text x="135" y="11" class="val">4.1%</text>
     </g>
 
     <g transform="translate(25, 137)">
-      <rect width="13" height="13" rx="2" fill="#A97BFF"/>
-      <text x="22" y="11" class="label">Kotlin</text>
-      <text x="135" y="11" class="val">7.4%</text>
+      <rect width="13" height="13" rx="2" fill="#3178c6"/>
+      <text x="22" y="11" class="label">TypeScript</text>
+      <text x="135" y="11" class="val">2.7%</text>
     </g>
 
     <g transform="translate(25, 161)">
-      <rect width="13" height="13" rx="2" fill="#563d7c"/>
-      <text x="22" y="11" class="label">CSS</text>
-      <text x="135" y="11" class="val">3.3%</text>
+      <rect width="13" height="13" rx="2" fill="#f1e05a"/>
+      <text x="22" y="11" class="label">JavaScript</text>
+      <text x="135" y="11" class="val">2.7%</text>
     </g>
 
   <g>
     <circle cx="265" cy="108" r="45" fill="none" stroke="#161b22" stroke-width="22"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#178600" stroke-width="22" stroke-dasharray="152.81 129.93" stroke-dashoffset="-0.00" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#00B4AB" stroke-width="22" stroke-dasharray="47.21 235.53" stroke-dashoffset="-152.81" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#e34c26" stroke-width="22" stroke-dasharray="22.13 260.61" stroke-dashoffset="-200.02" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#A97BFF" stroke-width="22" stroke-dasharray="20.99 261.75" stroke-dashoffset="-222.15" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#563d7c" stroke-width="22" stroke-dasharray="9.41 273.34" stroke-dashoffset="-243.14" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#178600" stroke-width="22" stroke-dasharray="220.87 61.87" stroke-dashoffset="-0.00" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#e34c26" stroke-width="22" stroke-dasharray="17.21 265.53" stroke-dashoffset="-220.87" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#00B4AB" stroke-width="22" stroke-dasharray="11.53 271.21" stroke-dashoffset="-238.08" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#3178c6" stroke-width="22" stroke-dasharray="7.68 275.06" stroke-dashoffset="-249.62" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#f1e05a" stroke-width="22" stroke-dasharray="7.68 275.07" stroke-dashoffset="-257.30" transform="rotate(-90 265 108)"/>
   </g>
 </svg>

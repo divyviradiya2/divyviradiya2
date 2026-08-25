@@ -57,7 +57,7 @@
         <line x1="11.5" y1="8" x2="15.5" y2="8" stroke="#8b949e" stroke-width="1.8" stroke-linecap="round"/>
       </svg>
       <text x="24" y="13" class="label">Total Activity:</text>
-      <text x="160" y="13" class="val">1,229</text>
+      <text x="160" y="13" class="val">1,236</text>
     </g>
   </g>
 
