@@ -106,29 +106,6 @@
 
 ---
 
-<!-- 3D ISOMETRIC CONTRIBUTION SKYLINE & RETRO SNAKE -->
-<h3 align="center">Contribution Activity & 3D Skyline</h3>
-
-<div align="center">
-  <!-- 3D Isometric Skyline (Night View) -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/divyviradiya2/divyviradiya2/master/profile-3d-contrib/profile-night-view.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/divyviradiya2/divyviradiya2/master/profile-3d-contrib/profile-gitblock.svg">
-    <img alt="3D Contribution Skyline" src="https://raw.githubusercontent.com/divyviradiya2/divyviradiya2/master/profile-3d-contrib/profile-night-view.svg" width="100%" />
-  </picture>
-  <br /><br />
-  <!-- Retro Snake Animation -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/divyviradiya2/divyviradiya2/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/divyviradiya2/divyviradiya2/output/github-contribution-grid-snake.svg">
-    <img alt="Contribution Snake Animation" src="https://raw.githubusercontent.com/divyviradiya2/divyviradiya2/output/github-contribution-grid-snake-dark.svg" width="100%" />
-  </picture>
-</div>
-
-<br />
-
----
-
 <!-- SEAMLESS ANIMATED ANALYTICS DASHBOARD (DARK & GREEN ACCENT) -->
 <h3 align="center">Activity & Analytics Dashboard</h3>
 
