@@ -24,20 +24,23 @@
 <!-- ABOUT ME -->
 <table>
   <tr>
-    <td width="55%" valign="top">
+    <td width="58%" valign="top">
       <h3>About Me</h3>
       <p>
-        Hi there! I'm <b>Divy Viradiya</b>, a Software Developer and founder focused on building high-speed desktop utilities, cross-platform applications, systems programming, and modern full-stack architectures.
+        Hey! I'm <b>Divy Viradiya</b> — a builder, systems hacker, and founder based in <b>Surat, Gujarat</b>. Currently in my 2nd year studying Computer Engineering at <b>LD College of Engineering (LDCE)</b>.
+      </p>
+      <p>
+        I build software out of pure obsession with speed, low overhead, and practical utility. Rather than chasing trends, I focus on crafting native desktop applications, low-level tooling, networking engines, and scalable tools that solve real problems.
       </p>
       <ul>
-        <li><b>Founder of PocketMC</b>: Desktop management application for Minecraft instances and server operations.</li>
-        <li><b>Founder of DS Labs</b>: Developing specialized software systems and developer utilities.</li>
-        <li><b>Creator of EtherTransfer &amp; Photo-Fix</b>: High-speed PC-to-PC file transfer &amp; batch image processing engine in Rust.</li>
-        <li><b>Ask me about</b>: C#, Rust, TypeScript, Cross-platform GUI development, and Networking.</li>
+        <li>🚀 <b>Founder of PocketMC</b>: Desktop management application & server orchestration suite for Minecraft instances.</li>
+        <li>🔬 <b>Founder of DS Labs</b>: Specialized software systems, developer utilities, and high-performance tools.</li>
+        <li>⚡ <b>Creator of EtherTransfer &amp; Photo-Fix</b>: High-speed PC-to-PC LAN file transfer &amp; batch image processing engine in Rust &amp; C#.</li>
+        <li>🛠️ <b>Core Focus</b>: Systems Programming, Cross-Platform GUI, Networking Protocols, Rust, C# / .NET, and Performance Engineering.</li>
       </ul>
     </td>
-    <td width="45%" align="center" valign="middle">
-      <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" alt="Coding Animation" />
+    <td width="42%" align="center" valign="middle">
+      <img src="./assets/about-card.svg" width="100%" alt="Engineer Terminal Card" />
     </td>
   </tr>
 </table>
