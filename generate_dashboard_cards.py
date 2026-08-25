@@ -155,7 +155,7 @@ if not languages_data:
 os.makedirs("assets", exist_ok=True)
 
 # -------------------------------------------------------------
-# 3. GENERATE CARD 1: STATS CARD WITH CRISP VECTORS
+# 3. GENERATE CARD 1: STATS CARD (CLEAN GEOMETRIC ICONS)
 # -------------------------------------------------------------
 stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="100%" height="{HEIGHT}">
   <defs>
@@ -175,7 +175,7 @@ stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HE
   <text x="25" y="34" class="title">Stats</text>
 
   <g transform="translate(25, 58)">
-    <!-- 1. Total Stars (Clean Octicon Star) -->
+    <!-- 1. Total Stars -->
     <g transform="translate(0, 0)">
       <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
         <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.74a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.695Z"/>
@@ -184,25 +184,31 @@ stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HE
       <text x="145" y="13" class="val">{stats["stars"]}</text>
     </g>
 
-    <!-- 2. Total Commits (Clean Octicon Commit) -->
+    <!-- 2. Total Commits (Pixel-Perfect Geometric Git Commit Icon) -->
     <g transform="translate(0, 26)">
-      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
-        <path d="M10.5 7.75a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm1.43.75a4.002 4.002 0 0 0-7.86 0H.75a.75.75 0 1 0 0 1.5h3.32a4.002 4.002 0 0 0 7.86 0h3.32a.75.75 0 1 0 0-1.5h-3.32Z"/>
+      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16">
+        <line x1="0.5" y1="8" x2="4.5" y2="8" stroke="{LABEL_COLOR}" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="8" cy="8" r="3.5" fill="none" stroke="{LABEL_COLOR}" stroke-width="1.8"/>
+        <line x1="11.5" y1="8" x2="15.5" y2="8" stroke="{LABEL_COLOR}" stroke-width="1.8" stroke-linecap="round"/>
       </svg>
       <text x="24" y="13" class="label">Total Commits:</text>
       <text x="145" y="13" class="val">{stats["commits"]}</text>
     </g>
 
-    <!-- 3. Total PRs (Clean Octicon PR) -->
+    <!-- 3. Total PRs (Pixel-Perfect Geometric Git PR Icon) -->
     <g transform="translate(0, 52)">
-      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
-        <path d="M7.177 3.073 9.573.677A.25.25 0 0 1 10 .854v4.792a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm-2.25.75a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm11 7.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm-2.25.75a2.25 2.25 0 1 1 3 2.122v.128a.75.75 0 0 1-1.5 0v-.128a2.25 2.25 0 0 1-1.5-2.122Z"/>
+      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16">
+        <circle cx="3.5" cy="3.5" r="1.8" fill="{LABEL_COLOR}"/>
+        <line x1="3.5" y1="5.3" x2="3.5" y2="10.7" stroke="{LABEL_COLOR}" stroke-width="1.6"/>
+        <circle cx="3.5" cy="12.5" r="1.8" fill="{LABEL_COLOR}"/>
+        <circle cx="12.5" cy="4.5" r="1.8" fill="{LABEL_COLOR}"/>
+        <path d="M12.5 6.3v2.2a3.5 3.5 0 0 1-3.5 3.5H3.5" fill="none" stroke="{LABEL_COLOR}" stroke-width="1.6"/>
       </svg>
       <text x="24" y="13" class="label">Total PRs:</text>
       <text x="145" y="13" class="val">{stats["prs"]}</text>
     </g>
 
-    <!-- 4. Total Issues (Clean Octicon Issue) -->
+    <!-- 4. Total Issues -->
     <g transform="translate(0, 78)">
       <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
         <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"/>
@@ -211,7 +217,7 @@ stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HE
       <text x="145" y="13" class="val">{stats["issues"]}</text>
     </g>
 
-    <!-- 5. Contributed to (Clean Octicon Repo) -->
+    <!-- 5. Contributed to -->
     <g transform="translate(0, 104)">
       <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
         <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 0-.75.75v1.25a.75.75 0 0 1-1.28.53L7.47 14.25a.75.75 0 0 0-.53-.22H4.5A2.5 2.5 0 0 1 2 11.5v-9Zm10.5 10V1.5H4.5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h2.44a2.25 2.25 0 0 1 1.59.66l1.47 1.47V13.25a2.25 2.25 0 0 1 2-2.22V11H12.5v1.5ZM4.5 12h7a.75.75 0 0 0 .75-.75V11H4.5a1 1 0 0 0-1 1v-.25c.2.16.45.25.75.25Z"/>
@@ -290,7 +296,7 @@ with open("assets/languages-card.svg", "w", encoding="utf-8") as f:
     f.write(languages_svg)
 
 # -------------------------------------------------------------
-# 5. GENERATE CARD 3: PERIODIC CONTRIBUTIONS WITH CRISP VECTORS
+# 5. GENERATE CARD 3: PERIODIC CONTRIBUTIONS (CLEAN GEOMETRIC ICONS)
 # -------------------------------------------------------------
 now = datetime.now(timezone.utc)
 month_name = now.strftime('%B')
@@ -320,7 +326,7 @@ contributions_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WI
   <text x="25" y="34" class="title">Periodic Contributions</text>
 
   <g transform="translate(25, 58)">
-    <!-- 1. Today's Activity (Clean Zap Vector) -->
+    <!-- 1. Today's Activity (Zap Icon) -->
     <g transform="translate(0, 0)">
       <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{ACCENT_GREEN}">
         <path d="M9.504.43a.75.75 0 0 1 .496.7v4.12h3.25a.75.75 0 0 1 .593 1.21l-7.25 9a.75.75 0 0 1-1.258-.75l1.62-5.71H3.75a.75.75 0 0 1-.659-1.11l5.5-7a.75.75 0 0 1 .913-.46Z"/>
@@ -329,7 +335,7 @@ contributions_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WI
       <text x="160" y="13" class="highlight-val">{periodic["today"]}</text>
     </g>
 
-    <!-- 2. This Month's Activity (Clean Calendar Vector) -->
+    <!-- 2. This Month's Activity (Calendar Icon) -->
     <g transform="translate(0, 28)">
       <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
         <path d="M4.75 0a.75.75 0 0 1 .75.75V2h5V.75a.75.75 0 0 1 1.5 0V2h1.25C14.444 2 16 3.556 16 5.25v7.5C16 14.444 14.444 16 12.75 16H3.25C1.556 16 0 14.444 0 12.75v-7.5C0 3.556 1.556 2 3.25 2H4.5V.75A.75.75 0 0 1 4.75 0ZM1.5 6.5v6.25c0 .966.784 1.75 1.75 1.75h9.5A1.75 1.75 0 0 0 14.5 12.75V6.5Zm13-1.5V5.25a1.75 1.75 0 0 0-1.75-1.75H3.25A1.75 1.75 0 0 0 1.5 5.25V5Z"/>
@@ -338,7 +344,7 @@ contributions_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WI
       <text x="160" y="13" class="val">{periodic["month"]}</text>
     </g>
 
-    <!-- 3. This Year's Activity (Clean Trophy Vector) -->
+    <!-- 3. This Year's Activity (Trophy Icon) -->
     <g transform="translate(0, 56)">
       <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
         <path d="M3.75 2h8.5a.75.75 0 0 1 .75.75V4h1.75A1.25 1.25 0 0 1 16 5.25v.5A2.25 2.25 0 0 1 13.75 8H12a4 4 0 0 1-3.25 3.93v1.57h2a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1 0-1.5h2v-1.57A4 4 0 0 1 4 8H2.25A2.25 2.25 0 0 1 0 5.75v-.5A1.25 1.25 0 0 1 1.25 4H3V2.75A.75.75 0 0 1 3.75 2ZM3 5.5H1.5v.25c0 .414.336.75.75.75H3ZM13 6.5h.75a.75.75 0 0 0 .75-.75V5.5H13Zm-8.5-2v3.75a3.5 3.5 0 0 0 7 0V4.5Z"/>
@@ -347,10 +353,12 @@ contributions_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WI
       <text x="160" y="13" class="val">{periodic["year"]}</text>
     </g>
 
-    <!-- 4. Total Lifetime Activity (Clean Git Commit Vector) -->
+    <!-- 4. Total Lifetime Activity (Geometric Git Commit Icon) -->
     <g transform="translate(0, 84)">
-      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="{LABEL_COLOR}">
-        <path d="M10.5 7.75a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm1.43.75a4.002 4.002 0 0 0-7.86 0H.75a.75.75 0 1 0 0 1.5h3.32a4.002 4.002 0 0 0 7.86 0h3.32a.75.75 0 1 0 0-1.5h-3.32Z"/>
+      <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16">
+        <line x1="0.5" y1="8" x2="4.5" y2="8" stroke="{LABEL_COLOR}" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="8" cy="8" r="3.5" fill="none" stroke="{LABEL_COLOR}" stroke-width="1.8"/>
+        <line x1="11.5" y1="8" x2="15.5" y2="8" stroke="{LABEL_COLOR}" stroke-width="1.8" stroke-linecap="round"/>
       </svg>
       <text x="24" y="13" class="label">Total Activity:</text>
       <text x="160" y="13" class="val">{periodic["total"]}</text>
@@ -368,4 +376,4 @@ contributions_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WI
 
 with open("assets/contributions-card.svg", "w", encoding="utf-8") as f:
     f.write(contributions_svg)
-print("Updated all SVG cards with crisp, perfect vector icons!")
+print("Updated all cards with geometric, glitch-free vectors!")
