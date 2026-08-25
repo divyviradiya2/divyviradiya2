@@ -8,23 +8,32 @@
   <a href="https://github.com/divyviradiya2">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1000&color=10B981&background=0D111700&center=true&vCenter=true&width=650&lines=Founder+of+PocketMC;Founder+of+DS+Labs;Building+high-speed+desktop+utilities+%26+tools;Crafting+robust+systems+with+Rust%2C+C%23%2F.NET+%26+Go;Passionate+about+clean+code+%26+performance" alt="Typing SVG" />
   </a>
-</div>
+</div><br />
 
-
-
-<!-- SOCIAL BADGES -->
+<!-- ORGANIZATIONS & SOCIAL BADGES -->
 <p align="center">
+  <a href="https://github.com/PocketMC" target="_blank">
+    <img src="https://img.shields.io/badge/PocketMC-Founder-10b981?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="PocketMC" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/divyviradiya2" target="_blank">
+    <img src="https://img.shields.io/badge/DS_Labs-Founder-10b981?style=for-the-badge&logo=electron&logoColor=10b981&labelColor=0d1117" alt="DS Labs" />
+  </a>
+  &nbsp;
   <a href="https://github.com/divyviradiya2" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
-  <a href="https://linkedin.com/in/divyviradiya" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  &nbsp;
+  <a href="https://instagram.com/divyviradiya" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
-  <a href="mailto:your.email@example.com">
+  &nbsp;
+  <a href="https://reddit.com/user/divyviradiya" target="_blank">
+    <img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit" />
+  </a>
+  &nbsp;
+  <a href="mailto:divyviradiya2@gmail.com">
     <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://x.com/yourhandle" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
   </a>
 </p>
 
