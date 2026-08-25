@@ -12,8 +12,8 @@
 
 <!-- ORGANIZATIONS & SOCIAL BADGES -->
 <p align="center">
-  <a href="https://pocketmc.github.io/pocket-mc-website/" target="_blank"><img src="https://img.shields.io/badge/PocketMC-10B981?style=for-the-badge&logo=electron&logoColor=white" alt="PocketMC" /></a>
-  <a href="https://ds-labs.vercel.app" target="_blank"><img src="https://img.shields.io/badge/DS_Labs-181717?style=for-the-badge&logo=vercel&logoColor=10b981" alt="DS Labs" /></a>
+  <a href="https://pocketmc.github.io/pocket-mc-website/" target="_blank"><img src="https://img.shields.io/badge/PocketMC-10B981?style=for-the-badge&logo=globe&logoColor=white" alt="PocketMC" /></a>
+  <a href="https://ds-labs.vercel.app" target="_blank"><img src="https://img.shields.io/badge/DS_Labs-181717?style=for-the-badge&logo=globe&logoColor=10b981" alt="DS Labs" /></a>
   <a href="https://instagram.com/divyviradiya" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
   <a href="https://reddit.com/user/divyviradiya" target="_blank"><img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit" /></a>
   <a href="mailto:divyviradiya2@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
