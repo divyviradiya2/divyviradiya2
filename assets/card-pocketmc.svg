@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="50%" stop-color="#071a13" />
+      <stop offset="100%" stop-color="#0a1310" />
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="borderGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="40%" stop-color="#059669" />
+      <stop offset="70%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="titleGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <linearGradient id="badgeGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .card-title { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: 700; fill: url(#titleGrad2); letter-spacing: -0.5px; }
+    .card-tag { font-family: 'Fira Code', 'Segoe UI', monospace; font-size: 11px; font-weight: 600; fill: #10b981; letter-spacing: 1px; }
+    .card-desc { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 14px; fill: #94a3b8; font-weight: 400; }
+    .pill-text { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 600; fill: #e2e8f0; }
+    .metric-val { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 700; fill: #34d399; }
+  </style>
+
+  <!-- Base Card -->
+  <rect x="2" y="2" width="796" height="196" rx="14" fill="url(#bgGrad2)" stroke="url(#borderGrad2)" stroke-width="1.5" />
+
+  <!-- Top Glass Terminal Bar -->
+  <rect x="2" y="2" width="796" height="38" rx="14" fill="#081410" fill-opacity="0.6" />
+  <line x1="2" y1="40" x2="798" y2="40" stroke="#10b981" stroke-opacity="0.2" stroke-width="1" />
+
+  <!-- Terminal Window Controls -->
+  <circle cx="24" cy="21" r="5.5" fill="#ef4444" opacity="0.8" />
+  <circle cx="42" cy="21" r="5.5" fill="#f59e0b" opacity="0.8" />
+  <circle cx="60" cy="21" r="5.5" fill="#10b981" opacity="0.8" />
+
+  <!-- Window Header Tag -->
+  <text x="82" y="25" class="card-tag">DESKTOP PLATFORM // SERVER ARCHITECTURE</text>
+
+  <!-- Stars / Status Pill -->
+  <g transform="translate(660, 10)">
+    <rect width="115" height="22" rx="11" fill="url(#badgeGrad2)" stroke="#10b981" stroke-opacity="0.4" stroke-width="1" />
+    <path d="M12 4.5l2.3 4.7 5.2.8-3.8 3.7.9 5.2-4.6-2.4-4.6 2.4.9-5.2-3.8-3.7 5.2-.8z" fill="#f59e0b" transform="translate(2, -0.5) scale(0.8)"/>
+    <text x="28" y="15" class="metric-val">28+ Stars</text>
+  </g>
+
+  <!-- Project Icon / Visual Anchor -->
+  <g transform="translate(30, 60)">
+    <rect width="52" height="52" rx="12" fill="#06281e" stroke="#10b981" stroke-opacity="0.5" stroke-width="1.5" />
+    <!-- Isometric Cube / Desktop Node Icon -->
+    <path d="M26 14l14 8v16l-14 8-14-8V22l14-8zm0 3.3L15.5 23.3 26 29.3l10.5-6L26 17.3zm-11 9v11.7l10 5.7V32l-10-5.7zm22 0l-10 5.7V43.7l10-5.7V26.3z" fill="#34d399" />
+  </g>
+
+  <!-- Project Title & Subtitle -->
+  <text x="96" y="82" class="card-title">PocketMC Windows</text>
+  <text x="96" y="102" class="card-desc">Modern desktop management application to locally host, configure, and operate Minecraft servers.</text>
+  <text x="96" y="122" class="card-desc">Engineered for effortless orchestration of Java and Bedrock server instances without complexity.</text>
+
+  <!-- Tech Stack Pills -->
+  <g transform="translate(96, 142)">
+    <!-- C# Pill -->
+    <g transform="translate(0, 0)">
+      <rect width="64" height="26" rx="6" fill="#0e2f24" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+      <circle cx="12" cy="13" r="4" fill="#239120" />
+      <text x="22" y="17" class="pill-text">C#</text>
+    </g>
+    <!-- .NET 8 Pill -->
+    <g transform="translate(72, 0)">
+      <rect width="76" height="26" rx="6" fill="#0e2f24" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+      <circle cx="12" cy="13" r="4" fill="#512BD4" />
+      <text x="22" y="17" class="pill-text">.NET 8</text>
+    </g>
+    <!-- WinUI / Desktop Pill -->
+    <g transform="translate(156, 0)">
+      <rect width="112" height="26" rx="6" fill="#0e2f24" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+      <circle cx="12" cy="13" r="4" fill="#0078D4" />
+      <text x="22" y="17" class="pill-text">Windows App</text>
+    </g>
+    <!-- Instance Orchestration Pill -->
+    <g transform="translate(276, 0)">
+      <rect width="138" height="26" rx="6" fill="#0e2f24" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+      <circle cx="12" cy="13" r="4" fill="#34d399" />
+      <text x="22" y="17" class="pill-text">Node Orchestrator</text>
+    </g>
+  </g>
+
+  <!-- Right Side Live Arrow Link Indicator -->
+  <g transform="translate(735, 140)">
+    <circle cx="16" cy="13" r="14" fill="#0e2f24" stroke="#10b981" stroke-opacity="0.5" stroke-width="1"/>
+    <path d="M12 9l5 4-5 4" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

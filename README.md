@@ -83,22 +83,23 @@
 
 ---
 
-<!-- MAIN FEATURED PROJECTS (LARGE CRISP 48% CARDS) -->
+<!-- MAIN FEATURED PROJECTS (CUSTOM BESPOKE SHOWCASE CARDS) -->
 <h3 align="center">Main Projects</h3>
 
 <div align="center">
-  <!-- Row 1: EtherTransfer + PocketMC Windows -->
+  <!-- EtherTransfer Card -->
   <a href="https://github.com/divyviradiya2/ethertransfer" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=ethertransfer&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="EtherTransfer" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/PocketMC/pocket-mc-windows" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=PocketMC&repo=pocket-mc-windows&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="PocketMC Windows" />
+    <img src="./assets/card-ethertransfer.svg" width="97%" alt="EtherTransfer Showcase Card" />
   </a>
   <br /><br />
-  <!-- Row 2: Photo-Fix (With explicit readable description) -->
+  <!-- PocketMC Windows Card -->
+  <a href="https://github.com/PocketMC/pocket-mc-windows" target="_blank">
+    <img src="./assets/card-pocketmc.svg" width="97%" alt="PocketMC Windows Showcase Card" />
+  </a>
+  <br /><br />
+  <!-- Photo-Fix Card -->
   <a href="https://github.com/divyviradiya2/photo-fix" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&description=Lightweight+GUI+utility+to+organize+and+batch+process+photos+in+Rust&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="Photo-Fix" />
+    <img src="./assets/card-photofix.svg" width="97%" alt="Photo-Fix Showcase Card" />
   </a>
 </div>
 

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="50%" stop-color="#071a13" />
+      <stop offset="100%" stop-color="#0a1310" />
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="40%" stop-color="#059669" />
+      <stop offset="70%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+
+    <!-- Emerald Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .terminal-dot { transition: opacity 0.3s; }
+    .card-title { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: 700; fill: url(#titleGrad); letter-spacing: -0.5px; }
+    .card-tag { font-family: 'Fira Code', 'Segoe UI', monospace; font-size: 11px; font-weight: 600; fill: #10b981; letter-spacing: 1px; }
+    .card-desc { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 14px; fill: #94a3b8; font-weight: 400; }
+    .card-desc-bold { fill: #e2e8f0; font-weight: 600; }
+    .pill-text { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 600; fill: #e2e8f0; }
+    .metric-val { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 700; fill: #34d399; }
+    .metric-lbl { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 12px; fill: #64748b; }
+  </style>
+
+  <!-- Base Card -->
+  <rect x="2" y="2" width="796" height="196" rx="14" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="1.5" />
+
+  <!-- Top Glass Terminal Bar -->
+  <rect x="2" y="2" width="796" height="38" rx="14" fill="#081410" fill-opacity="0.6" />
+  <line x1="2" y1="40" x2="798" y2="40" stroke="#10b981" stroke-opacity="0.2" stroke-width="1" />
+
+  <!-- Terminal Window Controls -->
+  <circle cx="24" cy="21" r="5.5" fill="#ef4444" opacity="0.8" />
+  <circle cx="42" cy="21" r="5.5" fill="#f59e0b" opacity="0.8" />
+  <circle cx="60" cy="21" r="5.5" fill="#10b981" opacity="0.8" />
+
+  <!-- Window Header Tag -->
+  <text x="82" y="25" class="card-tag">FLAGSHIP UTILITY // HIGH-THROUGHPUT ENGINE</text>
+
+  <!-- Stars / Status Pill -->
+  <g transform="translate(660, 10)">
+    <rect width="115" height="22" rx="11" fill="url(#badgeGrad)" stroke="#10b981" stroke-opacity="0.4" stroke-width="1" />
+    <path d="M12 4.5l2.3 4.7 5.2.8-3.8 3.7.9 5.2-4.6-2.4-4.6 2.4.9-5.2-3.8-3.7 5.2-.8z" fill="#f59e0b" transform="translate(2, -0.5) scale(0.8)"/>
+    <text x="28" y="15" class="metric-val">74+ Stars</text>
+  </g>
+
+  <!-- Project Icon / Visual Anchor -->
+  <g transform="translate(30, 60)">
+    <rect width="52" height="52" rx="12" fill="#06281e" stroke="#10b981" stroke-opacity="0.5" stroke-width="1.5" />
+    <!-- Lightning Bolt Icon -->
+    <path d="M28 10L14 28h12l-2 14 16-20H28l2-12z" fill="#34d399" transform="translate(0, 0)" />
+  </g>
+
+  <!-- Project Title & Subtitle -->
+  <text x="96" y="82" class="card-title">EtherTransfer</text>
+  <text x="96" y="102" class="card-desc">High-speed PC-to-PC file transfer utility achieving maximum line rate over LAN / Ethernet cable.</text>
+  <text x="96" y="122" class="card-desc">Features custom socket protocol, multi-threaded pipeline, and cross-platform Avalonia UI.</text>
+
+  <!-- Tech Stack Pills -->
+  <g transform="translate(96, 142)">
+    <!-- C# Pill -->
+    <g transform="translate(0, 0)">
+      <rect width="64" height="26" rx="6" fill="#0e2f24" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+      <circle cx="12" cy="13" r="4" fill="#239120" />
+      <text x="22" y="17" class="pill-text">C#</text>
+    </g>
+    <!-- .NET Pill -->
+    <g transform="translate(72, 0)">
+      <rect width="76" height="26" rx="6" fill="#0e2f24" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+      <circle cx="12" cy="13" r="4" fill="#512BD4" />
+      <text x="22" y="17" class="pill-text">.NET 8</text>
+    </g>
+    <!-- Avalonia Pill -->
+    <g transform="translate(156, 0)">
+      <rect width="98" height="26" rx="6" fill="#0e2f24" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+      <circle cx="12" cy="13" r="4" fill="#8A2BE2" />
+      <text x="22" y="17" class="pill-text">Avalonia UI</text>
+    </g>
+    <!-- Socket / Networking Pill -->
+    <g transform="translate(262, 0)">
+      <rect width="128" height="26" rx="6" fill="#0e2f24" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+      <circle cx="12" cy="13" r="4" fill="#34d399" />
+      <text x="22" y="17" class="pill-text">Direct Sockets</text>
+    </g>
+  </g>
+
+  <!-- Right Side Live Arrow Link Indicator -->
+  <g transform="translate(735, 140)">
+    <circle cx="16" cy="13" r="14" fill="#0e2f24" stroke="#10b981" stroke-opacity="0.5" stroke-width="1"/>
+    <path d="M12 9l5 4-5 4" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>
