@@ -83,8 +83,8 @@
 
 ---
 
-<!-- FEATURED PROJECTS (PERFECT 2x2 BALANCED GRID) -->
-<h3 align="center">Featured Projects</h3>
+<!-- MAIN PROJECTS (EXCLUSIVELY THE 3 PRIMARY REPOSITORIES) -->
+<h3 align="center">Main Projects</h3>
 
 <div align="center">
   <!-- Row 1: Primary Flagship Systems -->
@@ -96,13 +96,9 @@
     <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=PocketMC&repo=pocket-mc-windows&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="PocketMC Windows" />
   </a>
   <br /><br />
-  <!-- Row 2: Rust Engine + Mobile Application -->
+  <!-- Row 2: Rust Engine -->
   <a href="https://github.com/divyviradiya2/photo-fix" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&description=Lightweight+GUI+utility+to+organize+and+batch+process+photos+in+Rust&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="Photo-Fix" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/divyviradiya2/DocuVerify" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=DocuVerify&description=Mobile+application+built+for+document+authentication+and+verification&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="DocuVerify" />
+    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false" width="48%" alt="Photo-Fix" />
   </a>
 </div>
 
