@@ -40,10 +40,10 @@ Alongside low-level systems, I build responsive, production-ready web platforms 
 
 ### Organizations & Ventures
 
-- **[PocketMC](https://pocketmc.github.io/pocket-mc-website/)** (Founder)
+- **[PocketMC](https://pocketmc.github.io/pocket-mc-website/)**
   A modern desktop application and web ecosystem built to make deploying, configuring, and managing local Minecraft servers intuitive and effortless without terminal mess.
 
-- **[DS Labs](https://ds-labs.vercel.app)** (Founder)
+- **[DS Labs](https://ds-labs.vercel.app)**
   An independent initiative dedicated to exploring custom software systems, developer utilities, and high-performance experiments.
 
 ---
