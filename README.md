@@ -80,21 +80,49 @@
 <!-- MAIN PROJECTS (EXCLUSIVELY THE 3 PRIMARY REPOSITORIES) -->
 <h3 align="center">Main Projects</h3>
 
-<div align="center">
-  <!-- Row 1: Primary Flagship Systems -->
-  <a href="https://github.com/divyviradiya2/ethertransfer" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=ethertransfer&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false&cache_seconds=1800" width="48%" alt="EtherTransfer" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/PocketMC/pocket-mc-windows" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=PocketMC&repo=pocket-mc-windows&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false&cache_seconds=1800" width="48%" alt="PocketMC Windows" />
-  </a>
-  <br /><br />
-  <!-- Row 2: Rust Engine -->
-  <a href="https://github.com/divyviradiya2/photo-fix" target="_blank">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=divyviradiya2&repo=photo-fix&description=Lightweight+GUI+utility+to+organize+and+batch+process+photos+in+Rust&bg_color=0d1117&title_color=10b981&text_color=8b949e&icon_color=10b981&border_color=238636&show_owner=false&cache_seconds=1800" width="48%" alt="Photo-Fix" />
-  </a>
-</div>
+<table width="100%">
+  <tr>
+    <td width="33.3%" valign="top" align="center">
+      <h4><a href="https://github.com/divyviradiya2/ethertransfer">EtherTransfer</a></h4>
+      <p>
+        <a href="https://github.com/divyviradiya2/ethertransfer">
+          <img src="https://img.shields.io/github/stars/divyviradiya2/ethertransfer?style=flat-square&color=10b981&labelColor=0d1117" alt="Stars" />
+        </a>
+      </p>
+      <p>High-speed PC-to-PC file &amp; folder transfer over local network and Ethernet.</p>
+      <p>
+        <img src="https://skillicons.dev/icons?i=cs,dotnet&theme=dark" height="28" alt="Tech Stack" />
+      </p>
+    </td>
+    <td width="33.3%" valign="top" align="center">
+      <h4><a href="https://github.com/PocketMC/pocket-mc-windows">PocketMC Windows</a></h4>
+      <p>
+        <a href="https://github.com/PocketMC/pocket-mc-windows">
+          <img src="https://img.shields.io/github/stars/PocketMC/pocket-mc-windows?style=flat-square&color=10b981&labelColor=0d1117" alt="Stars" />
+        </a>
+        <a href="https://github.com/PocketMC/pocket-mc-windows">
+          <img src="https://img.shields.io/github/forks/PocketMC/pocket-mc-windows?style=flat-square&color=10b981&labelColor=0d1117" alt="Forks" />
+        </a>
+      </p>
+      <p>Windows desktop app to host and manage Minecraft Java &amp; Bedrock servers.</p>
+      <p>
+        <img src="https://skillicons.dev/icons?i=cs,dotnet&theme=dark" height="28" alt="Tech Stack" />
+      </p>
+    </td>
+    <td width="33.3%" valign="top" align="center">
+      <h4><a href="https://github.com/divyviradiya2/photo-fix">Photo-Fix</a></h4>
+      <p>
+        <a href="https://github.com/divyviradiya2/photo-fix">
+          <img src="https://img.shields.io/github/stars/divyviradiya2/photo-fix?style=flat-square&color=10b981&labelColor=0d1117" alt="Stars" />
+        </a>
+      </p>
+      <p>Lightweight GUI utility to organize &amp; batch process photos in Rust.</p>
+      <p>
+        <img src="https://skillicons.dev/icons?i=rust&theme=dark" height="28" alt="Tech Stack" />
+      </p>
+    </td>
+  </tr>
+</table>
 
 <br />
 
