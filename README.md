@@ -49,18 +49,23 @@ Alongside low-level systems, I build responsive, production-ready web applicatio
 ---
 
 <!-- SKILLS / TECH STACK ICONS -->
-<h3 align="center">Tech Stack & Skills</h3>
+<h2 align="center">Tech Stack & Tools</h2>
 
 <div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=cs,dotnet,rust,ts,js,py,go,cpp,kotlin,dart&perline=10" alt="Languages" />
-    <br /><br />
-    <img src="https://skillicons.dev/icons?i=react,next,tailwind,redux,vite,flutter,electron,figma&perline=8" alt="Frontend & UI" />
-    <br /><br />
-    <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,postgres,mongodb,redis,mysql,prisma&perline=8" alt="Backend & DB" />
-    <br /><br />
-    <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,githubactions,git,linux,postman,vscode&perline=9" alt="DevOps & Tools" />
-  </a>
+  <p><b>Systems & Native Desktop</b></p>
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,rust,cpp,go,electron,python&perline=8" alt="Systems & Native Desktop" />
+  <br /><br />
+
+  <p><b>Full-Stack Web & Frontend</b></p>
+  <img src="https://skillicons.dev/icons?i=ts,js,react,next,tailwind,vite,redux,flutter,html,css&perline=10" alt="Full-Stack Web & Frontend" />
+  <br /><br />
+
+  <p><b>Backend & Databases</b></p>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,postgres,mongodb,redis,mysql,prisma&perline=8" alt="Backend & Databases" />
+  <br /><br />
+
+  <p><b>DevOps, Cloud & Tooling</b></p>
+  <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,githubactions,git,linux,postman,vscode,figma&perline=10" alt="DevOps, Cloud & Tooling" />
 </div>
 
 <br />
