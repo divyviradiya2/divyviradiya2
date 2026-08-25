@@ -136,21 +136,15 @@
 
 ---
 
-<!-- TRENDY BENTO GRID ANALYTICS DASHBOARD -->
-<h3 align="center">📊 GitHub Activity & Analytics Dashboard</h3>
+<!-- GITHUB ACTIVITY & ANALYTICS DASHBOARD -->
+<h3 align="center">📊 GitHub Activity & Analytics</h3>
 
 <div align="center">
-  <!-- Full-Width Summary Banner Card -->
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=divyviradiya2&theme=tokyonight" width="97%" alt="Profile Overview & Contribution Wave" />
   <br /><br />
-  <!-- Symmetric 2x2 Bento Suite -->
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=divyviradiya2&theme=tokyonight" width="48%" alt="Overall Stats" />
   &nbsp;
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=divyviradiya2&theme=tokyonight" width="48%" alt="Language Breakdown Donut" />
-  <br /><br />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=divyviradiya2&theme=tokyonight" width="48%" alt="Repos per Language Donut" />
-  &nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=divyviradiya2&theme=tokyonight" width="48%" alt="Productive Time Distribution" />
 </div>
 
 <br />
