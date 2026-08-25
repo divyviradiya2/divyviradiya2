@@ -136,16 +136,22 @@
 
 ---
 
-<!-- GITHUB STATS & ANALYTICS -->
-<h3 align="center">📊 GitHub Stats & Analytics</h3>
+<!-- TRENDY BENTO GRID ANALYTICS DASHBOARD -->
+<h3 align="center">📊 GitHub Activity & Analytics Dashboard</h3>
 
-<p align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=divyviradiya2&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" />
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=divyviradiya2&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-</p>
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=divyviradiya2&theme=tokyonight" width="48%" alt="Profile Details" />
+  &nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=divyviradiya2&theme=tokyonight" width="48%" alt="Language Breakdown Donut" />
+  <br /><br />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=divyviradiya2&theme=tokyonight" width="48%" alt="Productive Time Distribution" />
+  &nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=divyviradiya2&theme=tokyonight" width="48%" alt="Overall Stats" />
+</div>
 
 <br />
+
+---
 
 <!-- FOOTER BANNER -->
 <div align="center">
