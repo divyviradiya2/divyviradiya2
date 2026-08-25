@@ -81,21 +81,19 @@
 
 ---
 
-<!-- SEAMLESS ANIMATED ANALYTICS DASHBOARD (PERFECT 2 x 2 GRID) -->
+<!-- SEAMLESS ANIMATED ANALYTICS DASHBOARD -->
 <h3 align="center">Activity & Analytics Dashboard</h3>
 
 <div align="center">
-  <!-- Row 1: Profile Details Wave Graph & Overall Stats -->
+  <!-- Row 1: Periodic Contributions (Today, Month, Year) & Overall Stats -->
   <p align="center">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=divyviradiya2&theme=github_dark&name=Divy%20Viradiya&animation=rise" width="48%" alt="Profile Overview & Contribution Wave" />
+    <img src="./assets/contributions-card.svg" width="48%" alt="Periodic Contributions (Today, Month, Year)" />
     &nbsp;&nbsp;
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=divyviradiya2&theme=github_dark&animation=rise" width="48%" alt="Overall Stats" />
   </p>
   
-  <!-- Row 2: Periodic Contributions (Today, Month, Year) & Language Breakdown Donut -->
+  <!-- Row 2: Language Breakdown Donut -->
   <p align="center">
-    <img src="./assets/contributions-card.svg" width="48%" alt="Periodic Contributions (Today, Month, Year)" />
-    &nbsp;&nbsp;
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=divyviradiya2&theme=github_dark&animation=rise" width="48%" alt="Language Breakdown Donut" />
   </p>
 </div>
