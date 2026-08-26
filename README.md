@@ -6,7 +6,7 @@
 <!-- ANIMATED TYPING SUBTITLE (EMERALD GREEN AESTHETIC) -->
 <div align="center">
   <a href="https://github.com/divyviradiya2">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1000&color=10B981&background=0D111700&center=true&vCenter=true&width=650&lines=Founder+of+PocketMC;Founder+of+DS+Labs;Building+high-speed+desktop+utilities+%26+tools;Crafting+robust+systems+with+Rust%2C+C%23%2F.NET+%26+Go;Passionate+about+clean+code+%26+performance" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1000&color=10B981&background=0D111700&center=true&vCenter=true&width=650&lines=Co-Founder+of+PocketMC;Co-Founder+of+DS+Labs;Building+high-speed+desktop+utilities+%26+tools;Crafting+robust+systems+with+Rust%2C+C%23%2F.NET+%26+Go;Passionate+about+clean+code+%26+performance" alt="Typing SVG" />
   </a>
 </div><br />
 
