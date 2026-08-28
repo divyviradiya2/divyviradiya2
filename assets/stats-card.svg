@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="200">
-  <!-- Generated: 2026-08-27 23:20 UTC -->
+  <!-- Generated: 2026-08-28 07:46 UTC -->
   <defs>
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -56,7 +56,7 @@
         <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"/>
       </svg>
       <text x="24" y="13" class="label">Total Issues:</text>
-      <text x="145" y="13" class="val">0</text>
+      <text x="145" y="13" class="val">1</text>
     </g>
 
     <!-- 5. Contributed to -->
