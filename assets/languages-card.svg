@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="200">
-  <!-- Generated: 2026-11-21 07:49 UTC -->
+  <!-- Generated: 2026-11-21 15:44 UTC -->
   <defs>
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -20,7 +20,7 @@
     <g transform="translate(25, 65)">
       <rect width="13" height="13" rx="2" fill="#178600"/>
       <text x="22" y="11" class="label">C#</text>
-      <text x="135" y="11" class="val">72.0%</text>
+      <text x="135" y="11" class="val">71.8%</text>
     </g>
 
     <g transform="translate(25, 89)">
@@ -49,10 +49,10 @@
 
   <g>
     <circle cx="265" cy="108" r="45" fill="none" stroke="#161b22" stroke-width="22"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#178600" stroke-width="22" stroke-dasharray="203.55 79.20" stroke-dashoffset="-0.00" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#e34c26" stroke-width="22" stroke-dasharray="31.20 251.55" stroke-dashoffset="-203.55" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#00B4AB" stroke-width="22" stroke-dasharray="9.69 273.06" stroke-dashoffset="-234.74" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#ff3e00" stroke-width="22" stroke-dasharray="9.50 273.24" stroke-dashoffset="-244.43" transform="rotate(-90 265 108)"/>
-    <circle cx="265" cy="108" r="45" fill="none" stroke="#563d7c" stroke-width="22" stroke-dasharray="6.80 275.94" stroke-dashoffset="-253.93" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#178600" stroke-width="22" stroke-dasharray="203.13 79.62" stroke-dashoffset="-0.00" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#e34c26" stroke-width="22" stroke-dasharray="31.16 251.59" stroke-dashoffset="-203.13" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#00B4AB" stroke-width="22" stroke-dasharray="9.67 273.08" stroke-dashoffset="-234.28" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#ff3e00" stroke-width="22" stroke-dasharray="9.48 273.26" stroke-dashoffset="-243.95" transform="rotate(-90 265 108)"/>
+    <circle cx="265" cy="108" r="45" fill="none" stroke="#563d7c" stroke-width="22" stroke-dasharray="6.92 275.82" stroke-dashoffset="-253.43" transform="rotate(-90 265 108)"/>
   </g>
 </svg>
